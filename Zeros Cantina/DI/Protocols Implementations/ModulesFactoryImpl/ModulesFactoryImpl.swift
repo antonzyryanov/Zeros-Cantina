@@ -1,0 +1,24 @@
+//
+//  RoutersFactory.swift
+//  Zeros Cantina
+//
+//  Created by Anton Zyryanov on 14.06.2025.
+//
+
+import Foundation
+
+class ModulesFactoryImpl: ModulesFactoryProtocol {
+    
+    func createMainModule(dataRepository: MainDataRepositoryProtocol) -> RouterProtocol {
+        let mainRouter = MainRouter()
+        mainRouter.createModule(dataRepository: dataRepository)
+        return mainRouter
+    }
+    
+    func createCharactersScreenModule() -> CharactersScreenRouter {
+        let charactersRouter = CharactersScreenRouter()
+        charactersRouter.createModule()
+        return charactersRouter
+    }
+    
+}
