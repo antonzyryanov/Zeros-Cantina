@@ -17,7 +17,7 @@ protocol ViewToPresenterMainProtocol {
     var externalUI: PresenterToUIMainProtocol? { get set }
     var interactor: PresenterToInteractorMainProtocol? { get set }
     var router: PresenterToRouterMainProtocol? { get set }
-    var output: MainModuleCharactersOutputProtocol? { get set }
+    var output: MainModuleDataOutputProtocol? { get set }
 }
 
 protocol PresenterToInteractorMainProtocol {
@@ -27,6 +27,7 @@ protocol PresenterToInteractorMainProtocol {
 
 protocol InteractorToPresenterMainProtocol {
     func handeInteractorUpdateOf(characters: [CharacterCardModel])
+    func handeInteractorUpdateOf(vehicles: [VehiclesCardModel])
 }
 
 protocol PresenterToRouterMainProtocol {

@@ -12,7 +12,8 @@ final class Zeros_CantinaTests: XCTestCase {
 
     func test_whenScreenIsShown_thenTabBarButtonsShowed() {
         let charactersRouter = CharactersScreenRouter()
-        charactersRouter.createModule()
+        let mainModuleProxy = MainModuleProxyImpl.shared
+        charactersRouter.createModule(charactersDataInput: mainModuleProxy)
         guard let charactersVC = charactersRouter.presenter.view as? CharactersScreenViewController else {
             return
         }

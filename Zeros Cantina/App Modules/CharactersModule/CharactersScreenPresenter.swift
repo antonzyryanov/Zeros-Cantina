@@ -16,6 +16,10 @@ class CharactersScreenPresenter: ViewToPresenterCharactersScreenProtocol {
     var interactor: PresenterToInteractorCharactersScreenProtocol?
     var router: PresenterToRouterCharactersScreenProtocol?
     
+    func navigateTo(screen: String) {
+        router?.navigateTo(screen: screen)
+    }
+    
     func handleViewRequest() {
         
     }

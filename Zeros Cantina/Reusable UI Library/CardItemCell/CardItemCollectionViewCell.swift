@@ -16,7 +16,11 @@ class CardItemCollectionViewCell: UICollectionViewCell {
     var cellImageView = UIImageView()
     var cellTitle = UILabel()
     
-    func setupCellUI() {
+    override func prepareForReuse() {
+        cellImageView.image = nil
+    }
+    
+    func setupCellUI(cellType: String) {
         self.contentView.addSubview(bgView)
         self.contentView.layer.cornerRadius = 16
         self.contentView.clipsToBounds = true
@@ -45,7 +49,15 @@ class CardItemCollectionViewCell: UICollectionViewCell {
         }
         cellTitle.textColor = . white
         cellTitle.font = .systemFont(ofSize: 24, weight: .bold)
-        cellImageView.image = UIImage(named: "default_card_image")
+        switch cellType {
+            case "character":
+                cellImageView.image = UIImage(named: "default_character_image")
+            case "vehicle":
+                cellImageView.image = UIImage(named: "default_vehicle_image")
+            default:
+                _ = ""
+        }
+        
     }
     
     func configureWith(model: CardItemProtocol) {

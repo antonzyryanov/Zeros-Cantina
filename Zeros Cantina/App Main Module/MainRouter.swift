@@ -19,6 +19,23 @@ class MainRouter: PresenterToRouterMainProtocol, RouterProtocol {
         self.childRouters = childRouters
     }
     
+    func navigateTo(screen: String) {
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {
+            self.show(screen: screen)
+        }
+    }
+    
+    func show(screen: String) {
+        switch screen {
+            case "Characters":
+                showCharactersScreen()
+            case "Vehicles":
+                showVehiclesScreen()
+            default:
+                _ = "default"
+        }
+    }
+    
     func showCharactersScreen() {
         guard
         let charactersScreenVCRouter = childRouters[0] as? CharactersScreenRouter,
@@ -29,6 +46,18 @@ class MainRouter: PresenterToRouterMainProtocol, RouterProtocol {
             return
         }
         currentWindow.rootViewController = charactersScreenVC
+    }
+    
+    func showVehiclesScreen() {
+        guard
+        let vehiclesScreenVCRouter = childRouters[1] as? VehiclesScreenRouter,
+        let vehiclesScreenVC = vehiclesScreenVCRouter.presenter.view as? VehiclesScreenViewController,
+        let currentWindow = UIApplication.shared.currentWindow
+        else {
+            print("[MainRouter] failed to show Characters screen")
+            return
+        }
+        currentWindow.rootViewController = vehiclesScreenVC
     }
     
     func createModule(dataRepository: MainDataRepositoryProtocol)  {

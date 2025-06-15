@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol RouterProtocol {
-    
+protocol RouterProtocol: AnyObject {
+    func navigateTo(screen: String)
 }

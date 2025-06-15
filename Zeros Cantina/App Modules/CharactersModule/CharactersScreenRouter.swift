@@ -11,6 +11,12 @@ import UIKit
 
 class CharactersScreenRouter: PresenterToRouterCharactersScreenProtocol, RouterProtocol {
     
+    weak var mainRouter: RouterProtocol? = nil
+    
+    func navigateTo(screen: String) {
+        mainRouter?.navigateTo(screen: screen)
+    }
+    
     let presenter: ViewToPresenterCharactersScreenProtocol & InteractorToPresenterCharactersScreenProtocol = CharactersScreenPresenter()
     
     func createModule(charactersDataInput: CharactersModuleDataInputProtocol) {

@@ -19,6 +19,7 @@ protocol ViewToPresenterCharactersScreenProtocol {
     var router: PresenterToRouterCharactersScreenProtocol? { get set }
     
     func handleViewRequest()
+    func navigateTo(screen: String)
 }
 
 protocol PresenterToInteractorCharactersScreenProtocol {
@@ -34,5 +35,5 @@ protocol InteractorToPresenterCharactersScreenProtocol {
 }
 
 protocol PresenterToRouterCharactersScreenProtocol {
-    
+    func navigateTo(screen: String)
 }

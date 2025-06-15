@@ -7,13 +7,21 @@
 
 import Foundation
 
-class MainModuleProxyImpl: MainModuleCharactersOutputProtocol {
+class MainModuleProxyImpl: MainModuleDataOutputProtocol {
+    
+    
     
     static let shared = MainModuleProxyImpl()
     
     internal var characters: [CharacterCardModel] = [] {
         didSet {
             NotificationCenter.default.post(name: .CharactersUpdated, object: nil)
+        }
+    }
+    
+    internal var vehicles: [VehiclesCardModel] = [] {
+        didSet {
+            NotificationCenter.default.post(name: .VehiclesUpdated, object: nil)
         }
     }
     
@@ -33,4 +41,18 @@ extension MainModuleProxyImpl: CharactersModuleDataInputProtocol {
     func requestCharactersData() {
         NotificationCenter.default.post(name: .CharactersRequest, object: nil)
     }
+}
+
+extension MainModuleProxyImpl: VehiclesModuleDataInputProtocol {
+    var vehiclesUpdateSubscriptionKey: String {
+        get {
+            Notification.Name.VehiclesUpdated.rawValue
+        }
+    }
+    
+    func requestVehiclesData() {
+        NotificationCenter.default.post(name: .VehiclesRequest, object: nil)
+    }
+    
+    
 }

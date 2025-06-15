@@ -22,4 +22,10 @@ class ModulesFactoryImpl: ModulesFactoryProtocol {
         return charactersRouter
     }
     
+    func createVehiclesScreenModule(vehiclesDataInput: VehiclesModuleDataInputProtocol) -> VehiclesScreenRouter {
+        let vehiclesRouter = VehiclesScreenRouter()
+        vehiclesRouter.createModule(vehiclesDataInput: vehiclesDataInput)
+        return vehiclesRouter
+    }
+    
 }

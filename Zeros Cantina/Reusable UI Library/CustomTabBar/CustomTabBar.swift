@@ -11,6 +11,8 @@ class CustomTabBar: UIView {
     
     var buttonsViews: [CustomTabBarButton] = []
     
+    var navigateToScreen: ((String)->Void)? = nil
+    
     init() {
         super.init(frame: .zero)
     }
@@ -30,6 +32,7 @@ class CustomTabBar: UIView {
             }
             buttonView.layer.cornerRadius = configuration.buttonsCornerRadius
             buttonView.layer.masksToBounds = true
+            buttonView.navigateToScreen = navigateToScreen
             buttonsViews.append(buttonView)
             buttonView.backgroundView?.backgroundColor = configuration.buttonsColor
             stackView.addArrangedSubview(buttonView)

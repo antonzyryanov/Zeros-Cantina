@@ -19,9 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func sceneDidBecomeActive(_ scene: UIScene) {
-
-        diContainer = DIContainer()
-        showUIToUserAfterDIFinished()
+        if diContainer == nil {
+            diContainer = DIContainer()
+            showUIToUserAfterDIFinished()
+        }
     }
     
     @objc func showUIToUserAfterDIFinished() {

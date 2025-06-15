@@ -7,8 +7,9 @@
 
 import Foundation
 
-protocol MainModuleCharactersOutputProtocol {
+protocol MainModuleDataOutputProtocol {
     
     var characters: [CharacterCardModel] { get set }
+    var vehicles: [VehiclesCardModel] { get set }
     
 }

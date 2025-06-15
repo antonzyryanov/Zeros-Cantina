@@ -19,8 +19,11 @@ class MainDataRepositoryImpl: MainDataRepositoryProtocol {
         }, cardType: CardType.characters.rawValue)
     }
     
-    func fetchVehicles(completion: ([VehiclesCardModel]) -> Void) {
-        
+    func fetchVehicles(completion: @escaping ([VehiclesCardModel]) -> Void) {
+        externalWorker.fetchCards(completion: { vehiclesCards in
+            guard let vehicles = vehiclesCards as? [VehiclesCardModel] else { return }
+            completion(vehicles)
+        }, cardType: CardType.vehicles.rawValue)
     }
     
 }

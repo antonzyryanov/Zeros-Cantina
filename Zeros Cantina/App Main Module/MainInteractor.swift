@@ -19,24 +19,33 @@ class MainInteractor: PresenterToInteractorMainProtocol {
     init(dataRepository: MainDataRepositoryProtocol) {
         self.dataRepository = dataRepository
         getCharacters()
+        getVehicles()
     }
     
     func getCharacters() {
         dataRepository.fetchCharacters { characters in
             self.mainEntity.characters = characters
             print("[MainInteractor] Characters fetched: \(self.mainEntity.characters)")
-            self.requestPresenterUpdate()
+            self.requestPresenterCharactersUpdate()
         }
     }
     
-    func requestPresenterUpdate() {
+    func requestPresenterCharactersUpdate() {
         guard let charactersModels = mainEntity.characters as? [CharacterCardModel] else { return }
         presenter?.handeInteractorUpdateOf(characters: charactersModels)
     }
     
     func getVehicles() {
         dataRepository.fetchVehicles { vehicles in
-            mainEntity.vehicles = vehicles
+            self.mainEntity.vehicles = vehicles
+            print("[MainInteractor] Vehicles fetched: \(self.mainEntity.vehicles)")
+            self.requestPresenterForVehiclesUpdate()
         }
     }
+    
+    func requestPresenterForVehiclesUpdate() {
+        guard let vehiclessModels = mainEntity.vehicles as? [VehiclesCardModel] else { return }
+        presenter?.handeInteractorUpdateOf(vehicles: vehiclessModels)
+    }
+    
 }

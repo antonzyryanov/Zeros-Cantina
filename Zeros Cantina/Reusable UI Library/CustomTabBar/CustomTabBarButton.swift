@@ -14,6 +14,7 @@ class CustomTabBarButton: UIView {
     var imageView: UIImageView?
     var backgroundView: UIView?
     var tapAction: (()->Void)?
+    var navigateToScreen: ((String)->Void)? = nil
     
     init() {
         super.init(frame: .zero)
@@ -96,6 +97,7 @@ class CustomTabBarButton: UIView {
     @objc func buttonTapAction() {
         playTapAnimations()
         tapAction?()
+        navigateToScreen?(titleLabel?.text ?? "")
     }
     
 }

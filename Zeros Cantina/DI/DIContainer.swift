@@ -29,6 +29,10 @@ class DIContainer: DIContainerProtocol {
         var routers: [RouterProtocol] = []
         let charactersScreenRouter = modulesFactoryImpl.createCharactersScreenModule(charactersDataInput: mainModuleProxy as! CharactersModuleDataInputProtocol)
         routers.append(charactersScreenRouter)
+        charactersScreenRouter.mainRouter = mainRouter
+        let vehiclesScreenRouter = modulesFactoryImpl.createVehiclesScreenModule(vehiclesDataInput: mainModuleProxy as! VehiclesModuleDataInputProtocol)
+        routers.append(vehiclesScreenRouter)
+        vehiclesScreenRouter.mainRouter = mainRouter
         return routers
     }
     
