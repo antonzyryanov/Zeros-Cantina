@@ -12,8 +12,11 @@ class MainPresenter: ViewToPresenterMainProtocol {
     var externalUI: PresenterToUIMainProtocol?
     var interactor: PresenterToInteractorMainProtocol?
     var router: PresenterToRouterMainProtocol?
+    var output: MainModuleCharactersOutputProtocol?
 }
 
 extension MainPresenter: InteractorToPresenterMainProtocol {
-    
+    func handeInteractorUpdateOf(characters: [CharacterCardModel]) {
+        output?.characters = characters
+    }
 }

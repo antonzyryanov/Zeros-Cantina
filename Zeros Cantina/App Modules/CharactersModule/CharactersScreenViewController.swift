@@ -32,6 +32,7 @@ class CharactersScreenViewController: VCWithCustomTabBar {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.view.bringSubviewToFront(charactersCollectionView)
+        self.presenter?.handleViewRequest()
     }
 
     private func setupCollectionView() {
@@ -48,18 +49,27 @@ class CharactersScreenViewController: VCWithCustomTabBar {
 }
 
 extension CharactersScreenViewController: PresenterToViewCharactersScreenProtocol{
+    func updateView() {
+        DispatchQueue.main.async {
+            self.charactersCollectionView.reloadData()
+        }
+    }
+    
 }
 
 extension CharactersScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        12
+        presenter?.presentationModels.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardItemCollectionViewCell.cellID, for: indexPath)
                 as! CardItemCollectionViewCell
         cell.setupCellUI()
+        if let model = presenter?.presentationModels[indexPath.row] {
+            cell.configureWith(model: model)
+        }
         return cell
     }
     

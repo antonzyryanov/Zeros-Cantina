@@ -25,7 +25,13 @@ class MainInteractor: PresenterToInteractorMainProtocol {
         dataRepository.fetchCharacters { characters in
             self.mainEntity.characters = characters
             print("[MainInteractor] Characters fetched: \(self.mainEntity.characters)")
+            self.requestPresenterUpdate()
         }
+    }
+    
+    func requestPresenterUpdate() {
+        guard let charactersModels = mainEntity.characters as? [CharacterCardModel] else { return }
+        presenter?.handeInteractorUpdateOf(characters: charactersModels)
     }
     
     func getVehicles() {

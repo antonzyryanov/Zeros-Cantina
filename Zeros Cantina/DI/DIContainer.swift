@@ -22,9 +22,12 @@ class DIContainer: DIContainerProtocol {
     }
     
     func createModules() -> [any RouterProtocol] {
-        guard let modulesFactoryImpl = modulesFactory as? ModulesFactoryImpl else { return [] }
+        guard let modulesFactoryImpl = modulesFactory as? ModulesFactoryImpl,
+        let mainRouter = rootRouter as? MainRouter,
+        let mainModuleProxy = mainRouter.presenter.output
+        else { return [] }
         var routers: [RouterProtocol] = []
-        let charactersScreenRouter = modulesFactoryImpl.createCharactersScreenModule()
+        let charactersScreenRouter = modulesFactoryImpl.createCharactersScreenModule(charactersDataInput: mainModuleProxy as! CharactersModuleDataInputProtocol)
         routers.append(charactersScreenRouter)
         return routers
     }

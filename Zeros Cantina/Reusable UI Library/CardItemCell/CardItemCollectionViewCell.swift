@@ -40,9 +40,11 @@ class CardItemCollectionViewCell: UICollectionViewCell {
         cellTitle.snp.makeConstraints { make in
             make.leading.equalToSuperview().inset(16)
             make.top.equalTo(cellImageView.snp.bottom).inset(-16)
-            make.height.equalTo(20)
+            make.height.equalTo(30)
             make.width.equalTo(300)
         }
+        cellTitle.textColor = . white
+        cellTitle.font = .systemFont(ofSize: 24, weight: .bold)
         cellImageView.image = UIImage(named: "default_card_image")
     }
     

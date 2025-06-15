@@ -13,12 +13,12 @@ class CharactersScreenRouter: PresenterToRouterCharactersScreenProtocol, RouterP
     
     let presenter: ViewToPresenterCharactersScreenProtocol & InteractorToPresenterCharactersScreenProtocol = CharactersScreenPresenter()
     
-    func createModule() {
+    func createModule(charactersDataInput: CharactersModuleDataInputProtocol) {
         let viewController = CharactersScreenViewController()
         viewController.presenter = presenter
         viewController.presenter?.router = self
         viewController.presenter?.view = viewController
-        viewController.presenter?.interactor = CharactersScreenInteractor()
+        viewController.presenter?.interactor = CharactersScreenInteractor(charactersDataInput: charactersDataInput)
         viewController.presenter?.interactor?.presenter = presenter
     }
     

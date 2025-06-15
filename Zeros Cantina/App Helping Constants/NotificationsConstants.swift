@@ -9,4 +9,6 @@ import Foundation
 
 extension Notification.Name {
     static let DICompleted = Notification.Name("DI_completed")
+    static let CharactersRequest = Notification.Name("characters_request")
+    static let CharactersUpdated = Notification.Name("characters_updated")
 }

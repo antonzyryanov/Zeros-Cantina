@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func sceneDidBecomeActive(_ scene: UIScene) {
-    //    NotificationCenter.default.addObserver(self, selector: #selector(self.showUIToUserAfterDIFinished), name: .DICompleted, object: nil)
+
         diContainer = DIContainer()
         showUIToUserAfterDIFinished()
     }
