@@ -30,6 +30,7 @@ struct SWAPICharactersContainerModel: Codable {
 struct SWAPICharacter: Codable {
     let uid, name: String
     let url: String
+    let image: String?
 }
 
 // MARK: - Social

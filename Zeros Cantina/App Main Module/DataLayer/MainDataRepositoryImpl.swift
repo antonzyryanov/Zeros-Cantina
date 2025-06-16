@@ -13,7 +13,7 @@ class MainDataRepositoryImpl: MainDataRepositoryProtocol {
     var internalWorker: DataRepositoryWorkerProtocol = LocalJSONDataManager()
     
     func fetchCharacters(completion: @escaping ([CharacterCardModel]) -> Void) {
-        externalWorker.fetchCards(completion: { charactersCards in
+        internalWorker.fetchCards(completion: { charactersCards in
             guard let characters = charactersCards as? [CharacterCardModel] else { return }
             completion(characters)
         }, cardType: CardType.characters.rawValue)
