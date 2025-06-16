@@ -10,4 +10,5 @@ import Foundation
 enum CardType: String {
     case characters = "characters"
     case vehicles = "vehicles"
+    case planets = "planets"
 }

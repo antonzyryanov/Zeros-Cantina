@@ -54,6 +54,9 @@ class CardItemCollectionViewCell: UICollectionViewCell {
                 cellImageView.image = UIImage(named: "default_character_image")
             case "vehicle":
                 cellImageView.image = UIImage(named: "default_vehicle_image")
+            case "planet":
+                cellImageView.image = UIImage(named: "default_planet_image")
+                
             default:
                 _ = ""
         }

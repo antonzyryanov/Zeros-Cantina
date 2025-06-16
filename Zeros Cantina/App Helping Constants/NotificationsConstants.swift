@@ -13,4 +13,6 @@ extension Notification.Name {
     static let CharactersUpdated = Notification.Name("characters_updated")
     static let VehiclesRequest = Notification.Name("vehicles_request")
     static let VehiclesUpdated = Notification.Name("vehicles_updated")
+    static let PlanetsRequest = Notification.Name("planets_request")
+    static let PlanetsUpdated = Notification.Name("planets_updated")
 }

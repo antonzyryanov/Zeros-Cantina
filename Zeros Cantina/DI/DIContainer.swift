@@ -27,13 +27,28 @@ class DIContainer: DIContainerProtocol {
         let mainModuleProxy = mainRouter.presenter.output
         else { return [] }
         var routers: [RouterProtocol] = []
+        createCharactersRouter(modulesFactoryImpl, mainModuleProxy, &routers, mainRouter)
+        createVehiclesModule(modulesFactoryImpl, mainModuleProxy, &routers, mainRouter)
+        createPlanetsModule(modulesFactoryImpl, mainModuleProxy, &routers, mainRouter)
+        return routers
+    }
+    
+    private func createCharactersRouter(_ modulesFactoryImpl: ModulesFactoryImpl, _ mainModuleProxy: any MainModuleDataOutputProtocol, _ routers: inout [any RouterProtocol], _ mainRouter: MainRouter) {
         let charactersScreenRouter = modulesFactoryImpl.createCharactersScreenModule(charactersDataInput: mainModuleProxy as! CharactersModuleDataInputProtocol)
         routers.append(charactersScreenRouter)
         charactersScreenRouter.mainRouter = mainRouter
+    }
+    
+    private func createVehiclesModule(_ modulesFactoryImpl: ModulesFactoryImpl, _ mainModuleProxy: any MainModuleDataOutputProtocol, _ routers: inout [any RouterProtocol], _ mainRouter: MainRouter) {
         let vehiclesScreenRouter = modulesFactoryImpl.createVehiclesScreenModule(vehiclesDataInput: mainModuleProxy as! VehiclesModuleDataInputProtocol)
         routers.append(vehiclesScreenRouter)
         vehiclesScreenRouter.mainRouter = mainRouter
-        return routers
+    }
+    
+    private func createPlanetsModule(_ modulesFactoryImpl: ModulesFactoryImpl, _ mainModuleProxy: any MainModuleDataOutputProtocol, _ routers: inout [any RouterProtocol], _ mainRouter: MainRouter) {
+        let planetsScreenRouter = modulesFactoryImpl.createPlanetsScreenModule(planetsDataInput: mainModuleProxy as! PlanetsModuleDataInputProtocol)
+        routers.append(planetsScreenRouter)
+        planetsScreenRouter.mainRouter = mainRouter
     }
     
     func setupRouterDependencies(routers: [RouterProtocol]) {

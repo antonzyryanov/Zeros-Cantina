@@ -40,7 +40,7 @@ class VCWithCustomTabBar: UIViewController {
             print("[VCWithCustomTabBar]: Characters screen opened")}),
             CustomTabBarButtonModel(title: "Vehicles", image: UIImage(named: "vehicles_icon")!, action: {
             print("[VCWithCustomTabBar]: Characters screen opened")}),
-            CustomTabBarButtonModel(title: "Favorites", image: UIImage(named: "favorites_icon")!, action: {
+            CustomTabBarButtonModel(title: "Planets", image: UIImage(named: "planets_icon")!, action: {
             print("[VCWithCustomTabBar]: Characters screen opened")}),
             CustomTabBarButtonModel(title: "Settings", image: UIImage(named: "settings_icon")!, action: {
             print("[VCWithCustomTabBar]: Characters screen opened")}),

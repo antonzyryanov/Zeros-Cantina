@@ -11,5 +11,6 @@ protocol MainModuleDataOutputProtocol {
     
     var characters: [CharacterCardModel] { get set }
     var vehicles: [VehiclesCardModel] { get set }
+    var planets: [PlanetCardModel] { get set }
     
 }

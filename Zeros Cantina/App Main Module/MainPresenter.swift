@@ -20,8 +20,13 @@ extension MainPresenter: InteractorToPresenterMainProtocol {
     func handeInteractorUpdateOf(characters: [CharacterCardModel]) {
         output?.characters = characters
     }
+    
     func handeInteractorUpdateOf(vehicles: [VehiclesCardModel]) {
         output?.vehicles = vehicles
+    }
+    
+    func handeInteractorUpdateOf(planets: [PlanetCardModel]) {
+        output?.planets = planets
     }
     
 }

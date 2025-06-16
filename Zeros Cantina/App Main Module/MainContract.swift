@@ -28,6 +28,7 @@ protocol PresenterToInteractorMainProtocol {
 protocol InteractorToPresenterMainProtocol {
     func handeInteractorUpdateOf(characters: [CharacterCardModel])
     func handeInteractorUpdateOf(vehicles: [VehiclesCardModel])
+    func handeInteractorUpdateOf(planets: [PlanetCardModel])
 }
 
 protocol PresenterToRouterMainProtocol {

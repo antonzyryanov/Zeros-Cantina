@@ -10,5 +10,6 @@ import Foundation
 class MainEntity {
     var characters: [CardItemProtocol] = []
     var vehicles: [CardItemProtocol] = []
+    var planets: [CardItemProtocol] = []
     var favorites: [CardItemProtocol] = []
 }

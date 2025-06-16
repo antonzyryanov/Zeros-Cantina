@@ -26,4 +26,11 @@ class MainDataRepositoryImpl: MainDataRepositoryProtocol {
         }, cardType: CardType.vehicles.rawValue)
     }
     
+    func fetchPlanets(completion: @escaping ([PlanetCardModel]) -> Void) {
+        externalWorker.fetchCards(completion: { planetsCards in
+            guard let planets = planetsCards as? [PlanetCardModel] else { return }
+            completion(planets)
+        }, cardType: CardType.planets.rawValue)
+    }
+    
 }

@@ -11,6 +11,7 @@ class NetworkSWAPIDataManager: DataRepositoryWorkerProtocol {
     
     let charactersFetcher = SWAPICharactersFetcher()
     let vehiclesFetcher = SWAPIVehiclesFetcher()
+    let planetsFetcher = SWAPIPlanetsFetcher()
     
     func fetchCards(completion: @escaping (([any CardItemProtocol]) -> Void), cardType: String) {
         if cardType == "characters" {
@@ -19,7 +20,11 @@ class NetworkSWAPIDataManager: DataRepositoryWorkerProtocol {
         if cardType == "vehicles" {
             fetchVehicles(completion: completion)
         }
+        if cardType == "planets" {
+            fetchPlanets(completion: completion)
+        }
     }
+    
     
     private func fetchCharacters(completion: @escaping ([any CardItemProtocol]) -> Void) {
         charactersFetcher.fetchCharacters(completion: completion)
@@ -27,6 +32,10 @@ class NetworkSWAPIDataManager: DataRepositoryWorkerProtocol {
     
     private func fetchVehicles(completion: @escaping ([any CardItemProtocol]) -> Void) {
         vehiclesFetcher.fetchVehicles(completion: completion)
+    }
+    
+    private func fetchPlanets(completion: @escaping ([any CardItemProtocol]) -> Void) {
+        planetsFetcher.fetchPlanets(completion: completion)
     }
     
 }

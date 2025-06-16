@@ -1,19 +1,19 @@
 //
-//  SWAPIVehiclesContainerModel.swift
+//  SWAPIPlanetsContainerModel.swift
 //  Zeros Cantina
 //
-//  Created by Anton Zyryanov on 15.06.2025.
+//  Created by Anton Zyryanov on 16.06.2025.
 //
-
 
 import Foundation
 
-struct SWAPIVehiclesContainerModel: Codable {
+// MARK: - SWAPIPlanetsContainerModel
+struct SWAPIPlanetsContainerModel: Codable {
     let message: String
     let totalRecords, totalPages: Int
     let previous: JSONNull?
     let next: String
-    let results: [SWAPIVehicle]
+    let results: [SWAPIPlanet]
     let apiVersion, timestamp: String
     let support: Support
     let social: Social
@@ -26,7 +26,8 @@ struct SWAPIVehiclesContainerModel: Codable {
     }
 }
 
-struct SWAPIVehicle: Codable {
+// MARK: - Result
+struct SWAPIPlanet: Codable {
     let uid, name: String
     let url: String
 }

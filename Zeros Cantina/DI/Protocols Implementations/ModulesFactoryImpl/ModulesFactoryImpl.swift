@@ -28,4 +28,10 @@ class ModulesFactoryImpl: ModulesFactoryProtocol {
         return vehiclesRouter
     }
     
+    func createPlanetsScreenModule(planetsDataInput: PlanetsModuleDataInputProtocol) -> PlanetsScreenRouter {
+        let planetsRouter = PlanetsScreenRouter()
+        planetsRouter.createModule(planetsDataInput: planetsDataInput)
+        return planetsRouter
+    }
+    
 }

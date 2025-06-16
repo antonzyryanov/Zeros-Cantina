@@ -31,6 +31,8 @@ class MainRouter: PresenterToRouterMainProtocol, RouterProtocol {
                 showCharactersScreen()
             case "Vehicles":
                 showVehiclesScreen()
+            case "Planets":
+                showPlanetsScreen()
             default:
                 _ = "default"
         }
@@ -54,10 +56,22 @@ class MainRouter: PresenterToRouterMainProtocol, RouterProtocol {
         let vehiclesScreenVC = vehiclesScreenVCRouter.presenter.view as? VehiclesScreenViewController,
         let currentWindow = UIApplication.shared.currentWindow
         else {
-            print("[MainRouter] failed to show Characters screen")
+            print("[MainRouter] failed to show Vehicles screen")
             return
         }
         currentWindow.rootViewController = vehiclesScreenVC
+    }
+    
+    func showPlanetsScreen() {
+        guard
+        let planetsScreenVCRouter = childRouters[2] as? PlanetsScreenRouter,
+        let planetsScreenVC = planetsScreenVCRouter.presenter.view as? PlanetsScreenViewController,
+        let currentWindow = UIApplication.shared.currentWindow
+        else {
+            print("[MainRouter] failed to show Planets screen")
+            return
+        }
+        currentWindow.rootViewController = planetsScreenVC
     }
     
     func createModule(dataRepository: MainDataRepositoryProtocol)  {

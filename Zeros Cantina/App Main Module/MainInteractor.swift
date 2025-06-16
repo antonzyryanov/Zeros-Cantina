@@ -20,6 +20,7 @@ class MainInteractor: PresenterToInteractorMainProtocol {
         self.dataRepository = dataRepository
         getCharacters()
         getVehicles()
+        getPlanets()
     }
     
     func getCharacters() {
@@ -46,6 +47,19 @@ class MainInteractor: PresenterToInteractorMainProtocol {
     func requestPresenterForVehiclesUpdate() {
         guard let vehiclessModels = mainEntity.vehicles as? [VehiclesCardModel] else { return }
         presenter?.handeInteractorUpdateOf(vehicles: vehiclessModels)
+    }
+    
+    func getPlanets() {
+        dataRepository.fetchPlanets { planets in
+            self.mainEntity.planets = planets
+            print("[MainInteractor] Planets fetched: \(self.mainEntity.planets)")
+            self.requestPresenterForPlanetsUpdate()
+        }
+    }
+    
+    func requestPresenterForPlanetsUpdate() {
+        guard let planetsModels = mainEntity.planets as? [PlanetCardModel] else { return }
+        presenter?.handeInteractorUpdateOf(planets: planetsModels)
     }
     
 }

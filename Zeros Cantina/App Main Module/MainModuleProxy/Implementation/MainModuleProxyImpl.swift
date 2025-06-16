@@ -9,8 +9,6 @@ import Foundation
 
 class MainModuleProxyImpl: MainModuleDataOutputProtocol {
     
-    
-    
     static let shared = MainModuleProxyImpl()
     
     internal var characters: [CharacterCardModel] = [] {
@@ -22,6 +20,12 @@ class MainModuleProxyImpl: MainModuleDataOutputProtocol {
     internal var vehicles: [VehiclesCardModel] = [] {
         didSet {
             NotificationCenter.default.post(name: .VehiclesUpdated, object: nil)
+        }
+    }
+    
+    internal var planets: [PlanetCardModel] = [] {
+        didSet {
+            NotificationCenter.default.post(name: .PlanetsUpdated, object: nil)
         }
     }
     
@@ -55,4 +59,16 @@ extension MainModuleProxyImpl: VehiclesModuleDataInputProtocol {
     }
     
     
+}
+
+extension MainModuleProxyImpl: PlanetsModuleDataInputProtocol {
+    var planetsUpdateSubscriptionKey: String {
+        get {
+            Notification.Name.PlanetsUpdated.rawValue
+        }
+    }
+    
+    func requestPlanetsData() {
+        NotificationCenter.default.post(name: .PlanetsRequest, object: nil)
+    }
 }
