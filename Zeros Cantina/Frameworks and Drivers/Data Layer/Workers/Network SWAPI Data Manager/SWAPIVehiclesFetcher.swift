@@ -36,7 +36,7 @@ class SWAPIVehiclesFetcher {
                   let vehiclesContainerModel = try? JSONDecoder().decode(SWAPIVehiclesContainerModel.self, from: data)
                   var cards: [CardItemProtocol] = []
                   for vehicle in vehiclesContainerModel?.results ?? [] {
-                      cards.append(VehiclesCardModel(title: vehicle.name, description: vehicle.uid, imageLink: "", isFavorite: false))
+                      cards.append(VehiclesCardModel(localImage: "", title: vehicle.name, description: vehicle.uid, imageLink: "", isFavorite: false))
                   }
                   completion(cards)
               } catch let error {

@@ -10,7 +10,7 @@ import Foundation
 class MainDataRepositoryImpl: MainDataRepositoryProtocol {
     
     var externalWorker: DataRepositoryWorkerProtocol = NetworkSWAPIDataManager()
-    var internalWorker: DataRepositoryWorkerProtocol = CoreDataManager()
+    var internalWorker: DataRepositoryWorkerProtocol = LocalJSONDataManager()
     
     func fetchCharacters(completion: @escaping ([CharacterCardModel]) -> Void) {
         externalWorker.fetchCards(completion: { charactersCards in
@@ -27,7 +27,7 @@ class MainDataRepositoryImpl: MainDataRepositoryProtocol {
     }
     
     func fetchPlanets(completion: @escaping ([PlanetCardModel]) -> Void) {
-        externalWorker.fetchCards(completion: { planetsCards in
+        internalWorker.fetchCards(completion: { planetsCards in
             guard let planets = planetsCards as? [PlanetCardModel] else { return }
             completion(planets)
         }, cardType: CardType.planets.rawValue)

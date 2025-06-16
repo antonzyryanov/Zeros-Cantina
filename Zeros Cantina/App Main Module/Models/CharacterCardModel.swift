@@ -8,6 +8,7 @@
 import Foundation
 
 struct CharacterCardModel: CardItemProtocol {
+    var localImage: String
     var title: String
     var description: String
     var imageLink: String

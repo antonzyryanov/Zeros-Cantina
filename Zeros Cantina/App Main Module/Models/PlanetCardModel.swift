@@ -8,6 +8,7 @@
 import Foundation
 
 struct PlanetCardModel: CardItemProtocol {
+    var localImage: String
     var title: String
     var description: String
     var imageLink: String

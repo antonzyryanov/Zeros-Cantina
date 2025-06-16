@@ -36,7 +36,7 @@ class SWAPICharactersFetcher {
                   let charactersContainerModel = try? JSONDecoder().decode(SWAPICharactersContainerModel.self, from: data)
                   var cards: [CardItemProtocol] = []
                   for character in charactersContainerModel?.results ?? [] {
-                      cards.append(CharacterCardModel(title: character.name, description: character.uid, imageLink: "", isFavorite: false))
+                      cards.append(CharacterCardModel(localImage: "", title: character.name, description: character.uid, imageLink: "", isFavorite: false))
                   }
                   completion(cards)
               } catch let error {

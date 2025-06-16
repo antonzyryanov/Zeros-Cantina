@@ -36,7 +36,7 @@ class SWAPIPlanetsFetcher {
                   let planetsContainerModel = try? JSONDecoder().decode(SWAPIPlanetsContainerModel.self, from: data)
                   var cards: [CardItemProtocol] = []
                   for planet in planetsContainerModel?.results ?? [] {
-                      cards.append(PlanetCardModel(title: planet.name, description: planet.uid, imageLink: "", isFavorite: false))
+                      cards.append(PlanetCardModel(localImage: "", title: planet.name, description: planet.uid, imageLink: "", isFavorite: false))
                   }
                   completion(cards)
               } catch let error {

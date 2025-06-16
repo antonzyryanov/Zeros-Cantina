@@ -49,6 +49,9 @@
 			exceptions = (
 				FC2134982DFCE8EF000B71D6 /* Exceptions for "Zeros Cantina" folder in "Zeros Cantina" target */,
 			);
+			explicitFileTypes = {
+				Resources/JSONS/planets.json = text.json;
+			};
 			path = "Zeros Cantina";
 			sourceTree = "<group>";
 		};

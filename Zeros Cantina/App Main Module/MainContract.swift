@@ -21,8 +21,8 @@ protocol ViewToPresenterMainProtocol {
 }
 
 protocol PresenterToInteractorMainProtocol {
-    
     var presenter: InteractorToPresenterMainProtocol? { get set }
+    func activate()
 }
 
 protocol InteractorToPresenterMainProtocol {
@@ -33,4 +33,8 @@ protocol InteractorToPresenterMainProtocol {
 
 protocol PresenterToRouterMainProtocol {
     
+}
+
+protocol RouterToPresenterMainProtocol {
+    func activate()
 }

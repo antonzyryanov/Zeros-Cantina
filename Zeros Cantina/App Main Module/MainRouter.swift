@@ -9,11 +9,15 @@
 import Foundation
 import UIKit
 
-class MainRouter: PresenterToRouterMainProtocol, RouterProtocol {
+class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProtocol {
     
-    var presenter: ViewToPresenterMainProtocol & InteractorToPresenterMainProtocol = MainPresenter()
+    var presenter: ViewToPresenterMainProtocol & InteractorToPresenterMainProtocol & RouterToPresenterMainProtocol = MainPresenter()
     
     var childRouters: [RouterProtocol] = []
+    
+    func activate() {
+        presenter.activate()
+    }
     
     func setupDependencies(childRouters: [RouterProtocol]) {
         self.childRouters = childRouters

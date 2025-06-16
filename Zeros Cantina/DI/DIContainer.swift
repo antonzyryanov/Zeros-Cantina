@@ -54,6 +54,7 @@ class DIContainer: DIContainerProtocol {
     func setupRouterDependencies(routers: [RouterProtocol]) {
         guard let mainRouter = rootRouter as? MainRouter else { return }
         mainRouter.setupDependencies(childRouters: routers)
+        mainRouter.activate()
     }
         
 }

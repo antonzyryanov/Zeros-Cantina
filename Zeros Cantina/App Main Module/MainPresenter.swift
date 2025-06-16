@@ -30,3 +30,9 @@ extension MainPresenter: InteractorToPresenterMainProtocol {
     }
     
 }
+
+extension MainPresenter: RouterToPresenterMainProtocol {
+    func activate() {
+        interactor?.activate()
+    }
+}

@@ -56,7 +56,6 @@ class CardItemCollectionViewCell: UICollectionViewCell {
                 cellImageView.image = UIImage(named: "default_vehicle_image")
             case "planet":
                 cellImageView.image = UIImage(named: "default_planet_image")
-                
             default:
                 _ = ""
         }
@@ -65,6 +64,9 @@ class CardItemCollectionViewCell: UICollectionViewCell {
     
     func configureWith(model: CardItemProtocol) {
         cellTitle.text = model.title
+        if model.localImage != "" {
+            cellImageView.image = UIImage(named: model.localImage)
+        }
     }
     
 }

@@ -30,4 +30,5 @@ struct SWAPIPlanetsContainerModel: Codable {
 struct SWAPIPlanet: Codable {
     let uid, name: String
     let url: String
+    let image: String?
 }
