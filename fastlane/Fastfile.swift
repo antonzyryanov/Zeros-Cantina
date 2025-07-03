@@ -11,6 +11,6 @@ import Foundation
 class Fastfile: LaneFile {
 	func testLane() {
 	desc("Tests")
-    scan()
+        scan(includeSimulatorLogs:false)
 	}
 }
