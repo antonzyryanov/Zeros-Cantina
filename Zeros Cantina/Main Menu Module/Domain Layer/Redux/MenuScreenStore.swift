@@ -6,11 +6,13 @@
 import SwiftUI
 import Combine
 
-final class Store<State, Action>: ObservableObject {
+final class MenuStore<State, Action>: ObservableObject {
     @Published private(set) var state: State
     
     private let reducer: Reducer<State, Action>
     private var effectCancellables: Set<AnyCancellable> = []
+    
+    var menuRouter: RouterProtocol?
     
     init(initialState: State, reducer: Reducer<State, Action>) {
         self.state = initialState
@@ -40,7 +42,7 @@ final class Store<State, Action>: ObservableObject {
     }
 }
 
-extension Store {
+extension MenuStore {
     func binding<Value>(for keyPath: KeyPath<State, Value>,
                         _ action: @escaping (Value) -> Action) -> Binding<Value> {
         Binding<Value>(

@@ -23,11 +23,10 @@ extension AppMenuAction {
 extension AppMenuAction {
     
     enum ItemsAction {
-        case loadItems
-        case updateItem(_ item: Item)
-        case deleteItem(_ item: Item)
-        
-        case setItems(_ items: [Item])
+        case setupItems
+        case openItem(_ item: MenuItem)
+        case itemWasOpened
+        case setItems(_ items: [MenuItem])
     }
 }
 

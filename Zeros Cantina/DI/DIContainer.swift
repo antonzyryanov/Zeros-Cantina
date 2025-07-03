@@ -15,7 +15,7 @@ class DIContainer: DIContainerProtocol {
     
     init() {
         let mainDataRepositoryImpl = MainDataRepositoryImpl()
-        self.rootRouter = modulesFactory.createMainModule(dataRepository: mainDataRepositoryImpl)
+        self.rootRouter = modulesFactory.createMainWikiModule(dataRepository: mainDataRepositoryImpl)
         let modulesRouters = self.createModules()
         setupRouterDependencies(routers: modulesRouters)
         NotificationCenter.default.post(name: .DICompleted, object: nil)
@@ -27,10 +27,17 @@ class DIContainer: DIContainerProtocol {
         let mainModuleProxy = mainRouter.presenter.output
         else { return [] }
         var routers: [RouterProtocol] = []
+        createMenuRouter(modulesFactoryImpl, &routers, mainRouter)
         createCharactersRouter(modulesFactoryImpl, mainModuleProxy, &routers, mainRouter)
         createVehiclesModule(modulesFactoryImpl, mainModuleProxy, &routers, mainRouter)
         createPlanetsModule(modulesFactoryImpl, mainModuleProxy, &routers, mainRouter)
         return routers
+    }
+    
+    private func createMenuRouter(_ modulesFactoryImpl: ModulesFactoryImpl, _ routers: inout [any RouterProtocol], _ mainRouter: MainRouter) {
+        let menuScreenRouter = modulesFactoryImpl.createMenuModule() 
+        routers.append(menuScreenRouter)
+        menuScreenRouter.mainRouter = mainRouter
     }
     
     private func createCharactersRouter(_ modulesFactoryImpl: ModulesFactoryImpl, _ mainModuleProxy: any MainModuleDataOutputProtocol, _ routers: inout [any RouterProtocol], _ mainRouter: MainRouter) {

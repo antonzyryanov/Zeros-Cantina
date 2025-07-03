@@ -9,7 +9,13 @@ import Foundation
 
 class ModulesFactoryImpl: ModulesFactoryProtocol {
     
-    func createMainModule(dataRepository: MainDataRepositoryProtocol) -> RouterProtocol {
+    func createMenuModule() -> MenuScreenRouter {
+        let menuRouter = MenuScreenRouter()
+        menuRouter.createModule()
+        return menuRouter
+    }
+    
+    func createMainWikiModule(dataRepository: MainDataRepositoryProtocol) -> RouterProtocol {
         let mainRouter = MainRouter()
         mainRouter.createModule(dataRepository: dataRepository)
         mainRouter.presenter.output = MainModuleProxyImpl.shared

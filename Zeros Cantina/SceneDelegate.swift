@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     @objc func showUIToUserAfterDIFinished() {
         guard let mainRouter = diContainer?.rootRouter as? MainRouter else { return }
-        mainRouter.showCharactersScreen()
+        mainRouter.showMenuScreen()
     }
 
 }

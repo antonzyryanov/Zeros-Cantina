@@ -10,7 +10,7 @@ protocol Faking {
 }
 
 extension Faking {
-    static func fakeItems(count: Int = 10) -> [Self] {
+    static func setupItems(count: Int = 10) -> [Self] {
         (0..<count).map { _ in Self.init()}
     }
 }

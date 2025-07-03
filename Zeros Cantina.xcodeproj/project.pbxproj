@@ -7,89 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC029C032E16127C0051663F /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B7B2E16127C0051663F /* CardType.swift */; };
+		FC029C042E16127C0051663F /* NotificationsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B7C2E16127C0051663F /* NotificationsConstants.swift */; };
+		FC029C052E16127C0051663F /* DIContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B7E2E16127C0051663F /* DIContainerProtocol.swift */; };
+		FC029C062E16127C0051663F /* MainRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B7F2E16127C0051663F /* MainRouterProtocol.swift */; };
+		FC029C072E16127C0051663F /* ModulesFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B802E16127C0051663F /* ModulesFactoryProtocol.swift */; };
+		FC029C082E16127C0051663F /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B812E16127C0051663F /* RouterProtocol.swift */; };
+		FC029C092E16127C0051663F /* ModulesFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B832E16127C0051663F /* ModulesFactoryImpl.swift */; };
+		FC029C0A2E16127C0051663F /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B862E16127C0051663F /* DIContainer.swift */; };
+		FC029C0B2E16127C0051663F /* UIApplication + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B882E16127C0051663F /* UIApplication + Extensions.swift */; };
+		FC029C0C2E16127C0051663F /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B8A2E16127C0051663F /* Array.swift */; };
+		FC029C0D2E16127C0051663F /* Faking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B8C2E16127C0051663F /* Faking.swift */; };
+		FC029C0E2E16127C0051663F /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B8E2E16127C0051663F /* AlertBuilder.swift */; };
+		FC029C0F2E16127C0051663F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B912E16127C0051663F /* MenuItem.swift */; };
+		FC029C102E16127C0051663F /* AppMenuAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B932E16127C0051663F /* AppMenuAction.swift */; };
+		FC029C112E16127C0051663F /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B952E16127C0051663F /* AppReducer.swift */; };
+		FC029C122E16127C0051663F /* CommonReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B962E16127C0051663F /* CommonReducer.swift */; };
+		FC029C132E16127C0051663F /* ItemsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B972E16127C0051663F /* ItemsReducer.swift */; };
+		FC029C142E16127C0051663F /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B982E16127C0051663F /* Reducer.swift */; };
+		FC029C152E16127C0051663F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B9A2E16127C0051663F /* State.swift */; };
+		FC029C162E16127C0051663F /* MenuScreenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B9B2E16127C0051663F /* MenuScreenStore.swift */; };
+		FC029C172E16127C0051663F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B9E2E16127C0051663F /* HomeView.swift */; };
+		FC029C182E16127C0051663F /* MenuItemsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029B9F2E16127C0051663F /* MenuItemsListView.swift */; };
+		FC029C192E16127C0051663F /* CardItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BA92E16127C0051663F /* CardItemCollectionViewCell.swift */; };
+		FC029C1A2E16127C0051663F /* CustomTabBarButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BAB2E16127C0051663F /* CustomTabBarButtonModel.swift */; };
+		FC029C1B2E16127C0051663F /* CustomTabBarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BAC2E16127C0051663F /* CustomTabBarConfiguration.swift */; };
+		FC029C1C2E16127C0051663F /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BAE2E16127C0051663F /* CustomTabBar.swift */; };
+		FC029C1D2E16127C0051663F /* CustomTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BAF2E16127C0051663F /* CustomTabBarButton.swift */; };
+		FC029C1E2E16127C0051663F /* VCWithCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BB12E16127C0051663F /* VCWithCustomTabBar.swift */; };
+		FC029C1F2E16127C0051663F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BB42E16127C0051663F /* CoreDataManager.swift */; };
+		FC029C202E16127C0051663F /* LocalJSONCharactersFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BB62E16127C0051663F /* LocalJSONCharactersFetcher.swift */; };
+		FC029C212E16127C0051663F /* LocalJSONDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BB72E16127C0051663F /* LocalJSONDataManager.swift */; };
+		FC029C222E16127C0051663F /* LocalJSONPlanetsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BB82E16127C0051663F /* LocalJSONPlanetsFetcher.swift */; };
+		FC029C232E16127C0051663F /* SWAPICharactersContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BBA2E16127C0051663F /* SWAPICharactersContainerModel.swift */; };
+		FC029C242E16127C0051663F /* SWAPIPlanetsContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BBB2E16127C0051663F /* SWAPIPlanetsContainerModel.swift */; };
+		FC029C252E16127C0051663F /* SWAPIVehiclesContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BBC2E16127C0051663F /* SWAPIVehiclesContainerModel.swift */; };
+		FC029C262E16127C0051663F /* NetworkSWAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BBE2E16127C0051663F /* NetworkSWAPIDataManager.swift */; };
+		FC029C272E16127C0051663F /* SWAPICharactersFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BBF2E16127C0051663F /* SWAPICharactersFetcher.swift */; };
+		FC029C282E16127C0051663F /* SWAPIPlanetsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BC02E16127C0051663F /* SWAPIPlanetsFetcher.swift */; };
+		FC029C292E16127C0051663F /* SWAPIVehiclesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BC12E16127C0051663F /* SWAPIVehiclesFetcher.swift */; };
+		FC029C2A2E16127C0051663F /* DataRepositoryWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BC62E16127C0051663F /* DataRepositoryWorkerProtocol.swift */; };
+		FC029C2B2E16127C0051663F /* MainDataRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BC72E16127C0051663F /* MainDataRepositoryProtocol.swift */; };
+		FC029C2C2E16127C0051663F /* MainDataRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BC92E16127C0051663F /* MainDataRepositoryImpl.swift */; };
+		FC029C2D2E16127C0051663F /* MainModuleProxyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BCB2E16127C0051663F /* MainModuleProxyImpl.swift */; };
+		FC029C2E2E16127C0051663F /* CardItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BCF2E16127C0051663F /* CardItemProtocol.swift */; };
+		FC029C2F2E16127C0051663F /* CharacterCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BD12E16127C0051663F /* CharacterCardModel.swift */; };
+		FC029C302E16127C0051663F /* PlanetCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BD22E16127C0051663F /* PlanetCardModel.swift */; };
+		FC029C312E16127C0051663F /* VehiclesCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BD32E16127C0051663F /* VehiclesCardModel.swift */; };
+		FC029C322E16127C0051663F /* MainModuleDataOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BD52E16127C0051663F /* MainModuleDataOutputProtocol.swift */; };
+		FC029C332E16127C0051663F /* MainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BD72E16127C0051663F /* MainContract.swift */; };
+		FC029C342E16127C0051663F /* MainEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BD82E16127C0051663F /* MainEntity.swift */; };
+		FC029C352E16127C0051663F /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BD92E16127C0051663F /* MainInteractor.swift */; };
+		FC029C362E16127C0051663F /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BDA2E16127C0051663F /* MainPresenter.swift */; };
+		FC029C372E16127C0051663F /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BDB2E16127C0051663F /* MainRouter.swift */; };
+		FC029C382E16127C0051663F /* CharactersModuleDataInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BDD2E16127C0051663F /* CharactersModuleDataInputProtocol.swift */; };
+		FC029C392E16127C0051663F /* CharactersScreenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BE02E16127C0051663F /* CharactersScreenContract.swift */; };
+		FC029C3A2E16127C0051663F /* CharactersScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BE12E16127C0051663F /* CharactersScreenInteractor.swift */; };
+		FC029C3B2E16127C0051663F /* CharactersScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BE22E16127C0051663F /* CharactersScreenPresenter.swift */; };
+		FC029C3C2E16127C0051663F /* CharactersScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BE32E16127C0051663F /* CharactersScreenRouter.swift */; };
+		FC029C3D2E16127C0051663F /* CharactersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BE42E16127C0051663F /* CharactersScreenViewController.swift */; };
+		FC029C3E2E16127C0051663F /* PlanetsModuleDataInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BE62E16127C0051663F /* PlanetsModuleDataInputProtocol.swift */; };
+		FC029C3F2E16127C0051663F /* PlanetsScreenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BE92E16127C0051663F /* PlanetsScreenContract.swift */; };
+		FC029C402E16127C0051663F /* PlanetsScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BEA2E16127C0051663F /* PlanetsScreenInteractor.swift */; };
+		FC029C412E16127C0051663F /* PlanetsScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BEB2E16127C0051663F /* PlanetsScreenPresenter.swift */; };
+		FC029C422E16127C0051663F /* PlanetsScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BEC2E16127C0051663F /* PlanetsScreenRouter.swift */; };
+		FC029C432E16127C0051663F /* PlanetsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BED2E16127C0051663F /* PlanetsScreenViewController.swift */; };
+		FC029C442E16127C0051663F /* VehiclesModuleDataInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BEF2E16127C0051663F /* VehiclesModuleDataInputProtocol.swift */; };
+		FC029C452E16127C0051663F /* VehiclesScreenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BF22E16127C0051663F /* VehiclesScreenContract.swift */; };
+		FC029C462E16127C0051663F /* VehiclesScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BF32E16127C0051663F /* VehiclesScreenInteractor.swift */; };
+		FC029C472E16127C0051663F /* VehiclesScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BF42E16127C0051663F /* VehiclesScreenPresenter.swift */; };
+		FC029C482E16127C0051663F /* VehiclesScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BF52E16127C0051663F /* VehiclesScreenRouter.swift */; };
+		FC029C492E16127C0051663F /* VehiclesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BF62E16127C0051663F /* VehiclesScreenViewController.swift */; };
+		FC029C4A2E16127C0051663F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BFA2E16127C0051663F /* AppDelegate.swift */; };
+		FC029C4B2E16127C0051663F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029BFF2E16127C0051663F /* SceneDelegate.swift */; };
+		FC029C4C2E16127C0051663F /* Zeros_Cantina.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC029C002E16127C0051663F /* Zeros_Cantina.xcdatamodeld */; };
+		FC029C4D2E16127C0051663F /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = FC029BA32E16127C0051663F /* characters.json */; };
+		FC029C4E2E16127C0051663F /* planets.json in Resources */ = {isa = PBXBuildFile; fileRef = FC029BA42E16127C0051663F /* planets.json */; };
+		FC029C4F2E16127C0051663F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC029BA62E16127C0051663F /* Assets.xcassets */; };
+		FC029C512E16127C0051663F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC029BFC2E16127C0051663F /* LaunchScreen.storyboard */; };
+		FC029C522E16127C0051663F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC029BFE2E16127C0051663F /* Main.storyboard */; };
+		FC029C552E16127E0051663F /* Zeros_CantinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029C532E16127E0051663F /* Zeros_CantinaTests.swift */; };
+		FC029C592E1612810051663F /* Zeros_CantinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029C562E1612810051663F /* Zeros_CantinaUITests.swift */; };
+		FC029C5A2E1612810051663F /* Zeros_CantinaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029C572E1612810051663F /* Zeros_CantinaUITestsLaunchTests.swift */; };
+		FC029C5C2E1631660051663F /* MenuScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029C5B2E1631660051663F /* MenuScreenRouter.swift */; };
 		FC7A74D82DFD075B000F07D3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC7A74D72DFD075B000F07D3 /* SnapKit */; };
-		FC842E212E1604E40013CD29 /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = FC842DC12E1604E40013CD29 /* characters.json */; };
-		FC842E222E1604E40013CD29 /* planets.json in Resources */ = {isa = PBXBuildFile; fileRef = FC842DC22E1604E40013CD29 /* planets.json */; };
-		FC842E232E1604E40013CD29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC842DC42E1604E40013CD29 /* Assets.xcassets */; };
-		FC842E252E1604E40013CD29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC842E1A2E1604E40013CD29 /* LaunchScreen.storyboard */; };
-		FC842E262E1604E40013CD29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC842E1C2E1604E40013CD29 /* Main.storyboard */; };
-		FC842E272E1604E40013CD29 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842D992E1604E40013CD29 /* CardType.swift */; };
-		FC842E282E1604E40013CD29 /* NotificationsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842D9A2E1604E40013CD29 /* NotificationsConstants.swift */; };
-		FC842E292E1604E40013CD29 /* DIContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842D9C2E1604E40013CD29 /* DIContainerProtocol.swift */; };
-		FC842E2A2E1604E40013CD29 /* MainRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842D9D2E1604E40013CD29 /* MainRouterProtocol.swift */; };
-		FC842E2B2E1604E40013CD29 /* ModulesFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842D9E2E1604E40013CD29 /* ModulesFactoryProtocol.swift */; };
-		FC842E2C2E1604E40013CD29 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842D9F2E1604E40013CD29 /* RouterProtocol.swift */; };
-		FC842E2D2E1604E40013CD29 /* ModulesFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DA12E1604E40013CD29 /* ModulesFactoryImpl.swift */; };
-		FC842E2E2E1604E40013CD29 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DA42E1604E40013CD29 /* DIContainer.swift */; };
-		FC842E2F2E1604E40013CD29 /* UIApplication + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DA62E1604E40013CD29 /* UIApplication + Extensions.swift */; };
-		FC842E302E1604E40013CD29 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DA82E1604E40013CD29 /* Array.swift */; };
-		FC842E312E1604E40013CD29 /* Faking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DAA2E1604E40013CD29 /* Faking.swift */; };
-		FC842E322E1604E40013CD29 /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DAC2E1604E40013CD29 /* AlertBuilder.swift */; };
-		FC842E332E1604E40013CD29 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DAF2E1604E40013CD29 /* Item.swift */; };
-		FC842E342E1604E40013CD29 /* AppMenuAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DB12E1604E40013CD29 /* AppMenuAction.swift */; };
-		FC842E352E1604E40013CD29 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DB32E1604E40013CD29 /* AppReducer.swift */; };
-		FC842E362E1604E40013CD29 /* CommonReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DB42E1604E40013CD29 /* CommonReducer.swift */; };
-		FC842E372E1604E40013CD29 /* ItemsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DB52E1604E40013CD29 /* ItemsReducer.swift */; };
-		FC842E382E1604E40013CD29 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DB62E1604E40013CD29 /* Reducer.swift */; };
-		FC842E392E1604E40013CD29 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DB82E1604E40013CD29 /* State.swift */; };
-		FC842E3A2E1604E40013CD29 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DB92E1604E40013CD29 /* Store.swift */; };
-		FC842E3B2E1604E40013CD29 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DBC2E1604E40013CD29 /* HomeView.swift */; };
-		FC842E3C2E1604E40013CD29 /* MenuItemsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DBD2E1604E40013CD29 /* MenuItemsListView.swift */; };
-		FC842E3D2E1604E40013CD29 /* CardItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DC72E1604E40013CD29 /* CardItemCollectionViewCell.swift */; };
-		FC842E3E2E1604E40013CD29 /* CustomTabBarButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DC92E1604E40013CD29 /* CustomTabBarButtonModel.swift */; };
-		FC842E3F2E1604E40013CD29 /* CustomTabBarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DCA2E1604E40013CD29 /* CustomTabBarConfiguration.swift */; };
-		FC842E402E1604E40013CD29 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DCC2E1604E40013CD29 /* CustomTabBar.swift */; };
-		FC842E412E1604E40013CD29 /* CustomTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DCD2E1604E40013CD29 /* CustomTabBarButton.swift */; };
-		FC842E422E1604E40013CD29 /* VCWithCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DCF2E1604E40013CD29 /* VCWithCustomTabBar.swift */; };
-		FC842E432E1604E40013CD29 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DD22E1604E40013CD29 /* CoreDataManager.swift */; };
-		FC842E442E1604E40013CD29 /* LocalJSONCharactersFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DD42E1604E40013CD29 /* LocalJSONCharactersFetcher.swift */; };
-		FC842E452E1604E40013CD29 /* LocalJSONDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DD52E1604E40013CD29 /* LocalJSONDataManager.swift */; };
-		FC842E462E1604E40013CD29 /* LocalJSONPlanetsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DD62E1604E40013CD29 /* LocalJSONPlanetsFetcher.swift */; };
-		FC842E472E1604E40013CD29 /* SWAPICharactersContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DD82E1604E40013CD29 /* SWAPICharactersContainerModel.swift */; };
-		FC842E482E1604E40013CD29 /* SWAPIPlanetsContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DD92E1604E40013CD29 /* SWAPIPlanetsContainerModel.swift */; };
-		FC842E492E1604E40013CD29 /* SWAPIVehiclesContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DDA2E1604E40013CD29 /* SWAPIVehiclesContainerModel.swift */; };
-		FC842E4A2E1604E40013CD29 /* NetworkSWAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DDC2E1604E40013CD29 /* NetworkSWAPIDataManager.swift */; };
-		FC842E4B2E1604E40013CD29 /* SWAPICharactersFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DDD2E1604E40013CD29 /* SWAPICharactersFetcher.swift */; };
-		FC842E4C2E1604E40013CD29 /* SWAPIPlanetsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DDE2E1604E40013CD29 /* SWAPIPlanetsFetcher.swift */; };
-		FC842E4D2E1604E40013CD29 /* SWAPIVehiclesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DDF2E1604E40013CD29 /* SWAPIVehiclesFetcher.swift */; };
-		FC842E4E2E1604E40013CD29 /* DataRepositoryWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DE42E1604E40013CD29 /* DataRepositoryWorkerProtocol.swift */; };
-		FC842E4F2E1604E40013CD29 /* MainDataRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DE52E1604E40013CD29 /* MainDataRepositoryProtocol.swift */; };
-		FC842E502E1604E40013CD29 /* MainDataRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DE72E1604E40013CD29 /* MainDataRepositoryImpl.swift */; };
-		FC842E512E1604E40013CD29 /* MainModuleProxyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DE92E1604E40013CD29 /* MainModuleProxyImpl.swift */; };
-		FC842E522E1604E40013CD29 /* CardItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DED2E1604E40013CD29 /* CardItemProtocol.swift */; };
-		FC842E532E1604E40013CD29 /* CharacterCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DEF2E1604E40013CD29 /* CharacterCardModel.swift */; };
-		FC842E542E1604E40013CD29 /* PlanetCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DF02E1604E40013CD29 /* PlanetCardModel.swift */; };
-		FC842E552E1604E40013CD29 /* VehiclesCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DF12E1604E40013CD29 /* VehiclesCardModel.swift */; };
-		FC842E562E1604E40013CD29 /* MainModuleDataOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DF32E1604E40013CD29 /* MainModuleDataOutputProtocol.swift */; };
-		FC842E572E1604E40013CD29 /* MainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DF52E1604E40013CD29 /* MainContract.swift */; };
-		FC842E582E1604E40013CD29 /* MainEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DF62E1604E40013CD29 /* MainEntity.swift */; };
-		FC842E592E1604E40013CD29 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DF72E1604E40013CD29 /* MainInteractor.swift */; };
-		FC842E5A2E1604E40013CD29 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DF82E1604E40013CD29 /* MainPresenter.swift */; };
-		FC842E5B2E1604E40013CD29 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DF92E1604E40013CD29 /* MainRouter.swift */; };
-		FC842E5C2E1604E40013CD29 /* CharactersModuleDataInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DFB2E1604E40013CD29 /* CharactersModuleDataInputProtocol.swift */; };
-		FC842E5D2E1604E40013CD29 /* CharactersScreenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DFE2E1604E40013CD29 /* CharactersScreenContract.swift */; };
-		FC842E5E2E1604E40013CD29 /* CharactersScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842DFF2E1604E40013CD29 /* CharactersScreenInteractor.swift */; };
-		FC842E5F2E1604E40013CD29 /* CharactersScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E002E1604E40013CD29 /* CharactersScreenPresenter.swift */; };
-		FC842E602E1604E40013CD29 /* CharactersScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E012E1604E40013CD29 /* CharactersScreenRouter.swift */; };
-		FC842E612E1604E40013CD29 /* CharactersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E022E1604E40013CD29 /* CharactersScreenViewController.swift */; };
-		FC842E622E1604E40013CD29 /* PlanetsModuleDataInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E042E1604E40013CD29 /* PlanetsModuleDataInputProtocol.swift */; };
-		FC842E632E1604E40013CD29 /* PlanetsScreenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E072E1604E40013CD29 /* PlanetsScreenContract.swift */; };
-		FC842E642E1604E40013CD29 /* PlanetsScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E082E1604E40013CD29 /* PlanetsScreenInteractor.swift */; };
-		FC842E652E1604E40013CD29 /* PlanetsScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E092E1604E40013CD29 /* PlanetsScreenPresenter.swift */; };
-		FC842E662E1604E40013CD29 /* PlanetsScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E0A2E1604E40013CD29 /* PlanetsScreenRouter.swift */; };
-		FC842E672E1604E40013CD29 /* PlanetsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E0B2E1604E40013CD29 /* PlanetsScreenViewController.swift */; };
-		FC842E682E1604E40013CD29 /* VehiclesModuleDataInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E0D2E1604E40013CD29 /* VehiclesModuleDataInputProtocol.swift */; };
-		FC842E692E1604E40013CD29 /* VehiclesScreenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E102E1604E40013CD29 /* VehiclesScreenContract.swift */; };
-		FC842E6A2E1604E40013CD29 /* VehiclesScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E112E1604E40013CD29 /* VehiclesScreenInteractor.swift */; };
-		FC842E6B2E1604E40013CD29 /* VehiclesScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E122E1604E40013CD29 /* VehiclesScreenPresenter.swift */; };
-		FC842E6C2E1604E40013CD29 /* VehiclesScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E132E1604E40013CD29 /* VehiclesScreenRouter.swift */; };
-		FC842E6D2E1604E40013CD29 /* VehiclesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E142E1604E40013CD29 /* VehiclesScreenViewController.swift */; };
-		FC842E6E2E1604E40013CD29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E182E1604E40013CD29 /* AppDelegate.swift */; };
-		FC842E6F2E1604E40013CD29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E1D2E1604E40013CD29 /* SceneDelegate.swift */; };
-		FC842E702E1604E40013CD29 /* Zeros_Cantina.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC842E1E2E1604E40013CD29 /* Zeros_Cantina.xcdatamodeld */; };
-		FC842E732E1604EE0013CD29 /* Zeros_CantinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E712E1604EE0013CD29 /* Zeros_CantinaTests.swift */; };
-		FC842E772E1604F10013CD29 /* Zeros_CantinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E742E1604F10013CD29 /* Zeros_CantinaUITests.swift */; };
-		FC842E782E1604F10013CD29 /* Zeros_CantinaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC842E752E1604F10013CD29 /* Zeros_CantinaUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,92 +111,93 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC029B7B2E16127C0051663F /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		FC029B7C2E16127C0051663F /* NotificationsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsConstants.swift; sourceTree = "<group>"; };
+		FC029B7E2E16127C0051663F /* DIContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerProtocol.swift; sourceTree = "<group>"; };
+		FC029B7F2E16127C0051663F /* MainRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterProtocol.swift; sourceTree = "<group>"; };
+		FC029B802E16127C0051663F /* ModulesFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactoryProtocol.swift; sourceTree = "<group>"; };
+		FC029B812E16127C0051663F /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		FC029B832E16127C0051663F /* ModulesFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactoryImpl.swift; sourceTree = "<group>"; };
+		FC029B862E16127C0051663F /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		FC029B882E16127C0051663F /* UIApplication + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extensions.swift"; sourceTree = "<group>"; };
+		FC029B8A2E16127C0051663F /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		FC029B8C2E16127C0051663F /* Faking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faking.swift; sourceTree = "<group>"; };
+		FC029B8E2E16127C0051663F /* AlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
+		FC029B912E16127C0051663F /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		FC029B932E16127C0051663F /* AppMenuAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuAction.swift; sourceTree = "<group>"; };
+		FC029B952E16127C0051663F /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		FC029B962E16127C0051663F /* CommonReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonReducer.swift; sourceTree = "<group>"; };
+		FC029B972E16127C0051663F /* ItemsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsReducer.swift; sourceTree = "<group>"; };
+		FC029B982E16127C0051663F /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		FC029B9A2E16127C0051663F /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		FC029B9B2E16127C0051663F /* MenuScreenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreenStore.swift; sourceTree = "<group>"; };
+		FC029B9E2E16127C0051663F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FC029B9F2E16127C0051663F /* MenuItemsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsListView.swift; sourceTree = "<group>"; };
+		FC029BA32E16127C0051663F /* characters.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = characters.json; sourceTree = "<group>"; };
+		FC029BA42E16127C0051663F /* planets.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = planets.json; sourceTree = "<group>"; };
+		FC029BA62E16127C0051663F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC029BA72E16127C0051663F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC029BA92E16127C0051663F /* CardItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC029BAB2E16127C0051663F /* CustomTabBarButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarButtonModel.swift; sourceTree = "<group>"; };
+		FC029BAC2E16127C0051663F /* CustomTabBarConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarConfiguration.swift; sourceTree = "<group>"; };
+		FC029BAE2E16127C0051663F /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		FC029BAF2E16127C0051663F /* CustomTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarButton.swift; sourceTree = "<group>"; };
+		FC029BB12E16127C0051663F /* VCWithCustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWithCustomTabBar.swift; sourceTree = "<group>"; };
+		FC029BB42E16127C0051663F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		FC029BB62E16127C0051663F /* LocalJSONCharactersFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJSONCharactersFetcher.swift; sourceTree = "<group>"; };
+		FC029BB72E16127C0051663F /* LocalJSONDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJSONDataManager.swift; sourceTree = "<group>"; };
+		FC029BB82E16127C0051663F /* LocalJSONPlanetsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJSONPlanetsFetcher.swift; sourceTree = "<group>"; };
+		FC029BBA2E16127C0051663F /* SWAPICharactersContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPICharactersContainerModel.swift; sourceTree = "<group>"; };
+		FC029BBB2E16127C0051663F /* SWAPIPlanetsContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIPlanetsContainerModel.swift; sourceTree = "<group>"; };
+		FC029BBC2E16127C0051663F /* SWAPIVehiclesContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIVehiclesContainerModel.swift; sourceTree = "<group>"; };
+		FC029BBE2E16127C0051663F /* NetworkSWAPIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSWAPIDataManager.swift; sourceTree = "<group>"; };
+		FC029BBF2E16127C0051663F /* SWAPICharactersFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPICharactersFetcher.swift; sourceTree = "<group>"; };
+		FC029BC02E16127C0051663F /* SWAPIPlanetsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIPlanetsFetcher.swift; sourceTree = "<group>"; };
+		FC029BC12E16127C0051663F /* SWAPIVehiclesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIVehiclesFetcher.swift; sourceTree = "<group>"; };
+		FC029BC62E16127C0051663F /* DataRepositoryWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositoryWorkerProtocol.swift; sourceTree = "<group>"; };
+		FC029BC72E16127C0051663F /* MainDataRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataRepositoryProtocol.swift; sourceTree = "<group>"; };
+		FC029BC92E16127C0051663F /* MainDataRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataRepositoryImpl.swift; sourceTree = "<group>"; };
+		FC029BCB2E16127C0051663F /* MainModuleProxyImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleProxyImpl.swift; sourceTree = "<group>"; };
+		FC029BCF2E16127C0051663F /* CardItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemProtocol.swift; sourceTree = "<group>"; };
+		FC029BD12E16127C0051663F /* CharacterCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCardModel.swift; sourceTree = "<group>"; };
+		FC029BD22E16127C0051663F /* PlanetCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCardModel.swift; sourceTree = "<group>"; };
+		FC029BD32E16127C0051663F /* VehiclesCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesCardModel.swift; sourceTree = "<group>"; };
+		FC029BD52E16127C0051663F /* MainModuleDataOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleDataOutputProtocol.swift; sourceTree = "<group>"; };
+		FC029BD72E16127C0051663F /* MainContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContract.swift; sourceTree = "<group>"; };
+		FC029BD82E16127C0051663F /* MainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntity.swift; sourceTree = "<group>"; };
+		FC029BD92E16127C0051663F /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		FC029BDA2E16127C0051663F /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		FC029BDB2E16127C0051663F /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		FC029BDD2E16127C0051663F /* CharactersModuleDataInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModuleDataInputProtocol.swift; sourceTree = "<group>"; };
+		FC029BE02E16127C0051663F /* CharactersScreenContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenContract.swift; sourceTree = "<group>"; };
+		FC029BE12E16127C0051663F /* CharactersScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenInteractor.swift; sourceTree = "<group>"; };
+		FC029BE22E16127C0051663F /* CharactersScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenPresenter.swift; sourceTree = "<group>"; };
+		FC029BE32E16127C0051663F /* CharactersScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenRouter.swift; sourceTree = "<group>"; };
+		FC029BE42E16127C0051663F /* CharactersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenViewController.swift; sourceTree = "<group>"; };
+		FC029BE62E16127C0051663F /* PlanetsModuleDataInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsModuleDataInputProtocol.swift; sourceTree = "<group>"; };
+		FC029BE92E16127C0051663F /* PlanetsScreenContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsScreenContract.swift; sourceTree = "<group>"; };
+		FC029BEA2E16127C0051663F /* PlanetsScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsScreenInteractor.swift; sourceTree = "<group>"; };
+		FC029BEB2E16127C0051663F /* PlanetsScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsScreenPresenter.swift; sourceTree = "<group>"; };
+		FC029BEC2E16127C0051663F /* PlanetsScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsScreenRouter.swift; sourceTree = "<group>"; };
+		FC029BED2E16127C0051663F /* PlanetsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsScreenViewController.swift; sourceTree = "<group>"; };
+		FC029BEF2E16127C0051663F /* VehiclesModuleDataInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesModuleDataInputProtocol.swift; sourceTree = "<group>"; };
+		FC029BF22E16127C0051663F /* VehiclesScreenContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesScreenContract.swift; sourceTree = "<group>"; };
+		FC029BF32E16127C0051663F /* VehiclesScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesScreenInteractor.swift; sourceTree = "<group>"; };
+		FC029BF42E16127C0051663F /* VehiclesScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesScreenPresenter.swift; sourceTree = "<group>"; };
+		FC029BF52E16127C0051663F /* VehiclesScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesScreenRouter.swift; sourceTree = "<group>"; };
+		FC029BF62E16127C0051663F /* VehiclesScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesScreenViewController.swift; sourceTree = "<group>"; };
+		FC029BFA2E16127C0051663F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC029BFB2E16127C0051663F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC029BFD2E16127C0051663F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC029BFF2E16127C0051663F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FC029C022E16127C0051663F /* Zeros_Cantina.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zeros_Cantina.xcdatamodel; sourceTree = "<group>"; };
+		FC029C532E16127E0051663F /* Zeros_CantinaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zeros_CantinaTests.swift; sourceTree = "<group>"; };
+		FC029C562E1612810051663F /* Zeros_CantinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zeros_CantinaUITests.swift; sourceTree = "<group>"; };
+		FC029C572E1612810051663F /* Zeros_CantinaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zeros_CantinaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC029C5B2E1631660051663F /* MenuScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreenRouter.swift; sourceTree = "<group>"; };
 		FC21346D2DFCE8ED000B71D6 /* Zeros Cantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zeros Cantina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2134862DFCE8EF000B71D6 /* Zeros CantinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeros CantinaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2134902DFCE8EF000B71D6 /* Zeros CantinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeros CantinaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC842D992E1604E40013CD29 /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
-		FC842D9A2E1604E40013CD29 /* NotificationsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsConstants.swift; sourceTree = "<group>"; };
-		FC842D9C2E1604E40013CD29 /* DIContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerProtocol.swift; sourceTree = "<group>"; };
-		FC842D9D2E1604E40013CD29 /* MainRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterProtocol.swift; sourceTree = "<group>"; };
-		FC842D9E2E1604E40013CD29 /* ModulesFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactoryProtocol.swift; sourceTree = "<group>"; };
-		FC842D9F2E1604E40013CD29 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
-		FC842DA12E1604E40013CD29 /* ModulesFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactoryImpl.swift; sourceTree = "<group>"; };
-		FC842DA42E1604E40013CD29 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
-		FC842DA62E1604E40013CD29 /* UIApplication + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extensions.swift"; sourceTree = "<group>"; };
-		FC842DA82E1604E40013CD29 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		FC842DAA2E1604E40013CD29 /* Faking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faking.swift; sourceTree = "<group>"; };
-		FC842DAC2E1604E40013CD29 /* AlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
-		FC842DAF2E1604E40013CD29 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		FC842DB12E1604E40013CD29 /* AppMenuAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuAction.swift; sourceTree = "<group>"; };
-		FC842DB32E1604E40013CD29 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
-		FC842DB42E1604E40013CD29 /* CommonReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonReducer.swift; sourceTree = "<group>"; };
-		FC842DB52E1604E40013CD29 /* ItemsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsReducer.swift; sourceTree = "<group>"; };
-		FC842DB62E1604E40013CD29 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
-		FC842DB82E1604E40013CD29 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		FC842DB92E1604E40013CD29 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		FC842DBC2E1604E40013CD29 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		FC842DBD2E1604E40013CD29 /* MenuItemsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsListView.swift; sourceTree = "<group>"; };
-		FC842DC12E1604E40013CD29 /* characters.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = characters.json; sourceTree = "<group>"; };
-		FC842DC22E1604E40013CD29 /* planets.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = planets.json; sourceTree = "<group>"; };
-		FC842DC42E1604E40013CD29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FC842DC52E1604E40013CD29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC842DC72E1604E40013CD29 /* CardItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		FC842DC92E1604E40013CD29 /* CustomTabBarButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarButtonModel.swift; sourceTree = "<group>"; };
-		FC842DCA2E1604E40013CD29 /* CustomTabBarConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarConfiguration.swift; sourceTree = "<group>"; };
-		FC842DCC2E1604E40013CD29 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		FC842DCD2E1604E40013CD29 /* CustomTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarButton.swift; sourceTree = "<group>"; };
-		FC842DCF2E1604E40013CD29 /* VCWithCustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWithCustomTabBar.swift; sourceTree = "<group>"; };
-		FC842DD22E1604E40013CD29 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		FC842DD42E1604E40013CD29 /* LocalJSONCharactersFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJSONCharactersFetcher.swift; sourceTree = "<group>"; };
-		FC842DD52E1604E40013CD29 /* LocalJSONDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJSONDataManager.swift; sourceTree = "<group>"; };
-		FC842DD62E1604E40013CD29 /* LocalJSONPlanetsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJSONPlanetsFetcher.swift; sourceTree = "<group>"; };
-		FC842DD82E1604E40013CD29 /* SWAPICharactersContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPICharactersContainerModel.swift; sourceTree = "<group>"; };
-		FC842DD92E1604E40013CD29 /* SWAPIPlanetsContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIPlanetsContainerModel.swift; sourceTree = "<group>"; };
-		FC842DDA2E1604E40013CD29 /* SWAPIVehiclesContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIVehiclesContainerModel.swift; sourceTree = "<group>"; };
-		FC842DDC2E1604E40013CD29 /* NetworkSWAPIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSWAPIDataManager.swift; sourceTree = "<group>"; };
-		FC842DDD2E1604E40013CD29 /* SWAPICharactersFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPICharactersFetcher.swift; sourceTree = "<group>"; };
-		FC842DDE2E1604E40013CD29 /* SWAPIPlanetsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIPlanetsFetcher.swift; sourceTree = "<group>"; };
-		FC842DDF2E1604E40013CD29 /* SWAPIVehiclesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIVehiclesFetcher.swift; sourceTree = "<group>"; };
-		FC842DE42E1604E40013CD29 /* DataRepositoryWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositoryWorkerProtocol.swift; sourceTree = "<group>"; };
-		FC842DE52E1604E40013CD29 /* MainDataRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataRepositoryProtocol.swift; sourceTree = "<group>"; };
-		FC842DE72E1604E40013CD29 /* MainDataRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataRepositoryImpl.swift; sourceTree = "<group>"; };
-		FC842DE92E1604E40013CD29 /* MainModuleProxyImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleProxyImpl.swift; sourceTree = "<group>"; };
-		FC842DED2E1604E40013CD29 /* CardItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemProtocol.swift; sourceTree = "<group>"; };
-		FC842DEF2E1604E40013CD29 /* CharacterCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCardModel.swift; sourceTree = "<group>"; };
-		FC842DF02E1604E40013CD29 /* PlanetCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCardModel.swift; sourceTree = "<group>"; };
-		FC842DF12E1604E40013CD29 /* VehiclesCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesCardModel.swift; sourceTree = "<group>"; };
-		FC842DF32E1604E40013CD29 /* MainModuleDataOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleDataOutputProtocol.swift; sourceTree = "<group>"; };
-		FC842DF52E1604E40013CD29 /* MainContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContract.swift; sourceTree = "<group>"; };
-		FC842DF62E1604E40013CD29 /* MainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntity.swift; sourceTree = "<group>"; };
-		FC842DF72E1604E40013CD29 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
-		FC842DF82E1604E40013CD29 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
-		FC842DF92E1604E40013CD29 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
-		FC842DFB2E1604E40013CD29 /* CharactersModuleDataInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModuleDataInputProtocol.swift; sourceTree = "<group>"; };
-		FC842DFE2E1604E40013CD29 /* CharactersScreenContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenContract.swift; sourceTree = "<group>"; };
-		FC842DFF2E1604E40013CD29 /* CharactersScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenInteractor.swift; sourceTree = "<group>"; };
-		FC842E002E1604E40013CD29 /* CharactersScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenPresenter.swift; sourceTree = "<group>"; };
-		FC842E012E1604E40013CD29 /* CharactersScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenRouter.swift; sourceTree = "<group>"; };
-		FC842E022E1604E40013CD29 /* CharactersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersScreenViewController.swift; sourceTree = "<group>"; };
-		FC842E042E1604E40013CD29 /* PlanetsModuleDataInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsModuleDataInputProtocol.swift; sourceTree = "<group>"; };
-		FC842E072E1604E40013CD29 /* PlanetsScreenContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsScreenContract.swift; sourceTree = "<group>"; };
-		FC842E082E1604E40013CD29 /* PlanetsScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsScreenInteractor.swift; sourceTree = "<group>"; };
-		FC842E092E1604E40013CD29 /* PlanetsScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsScreenPresenter.swift; sourceTree = "<group>"; };
-		FC842E0A2E1604E40013CD29 /* PlanetsScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsScreenRouter.swift; sourceTree = "<group>"; };
-		FC842E0B2E1604E40013CD29 /* PlanetsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsScreenViewController.swift; sourceTree = "<group>"; };
-		FC842E0D2E1604E40013CD29 /* VehiclesModuleDataInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesModuleDataInputProtocol.swift; sourceTree = "<group>"; };
-		FC842E102E1604E40013CD29 /* VehiclesScreenContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesScreenContract.swift; sourceTree = "<group>"; };
-		FC842E112E1604E40013CD29 /* VehiclesScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesScreenInteractor.swift; sourceTree = "<group>"; };
-		FC842E122E1604E40013CD29 /* VehiclesScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesScreenPresenter.swift; sourceTree = "<group>"; };
-		FC842E132E1604E40013CD29 /* VehiclesScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesScreenRouter.swift; sourceTree = "<group>"; };
-		FC842E142E1604E40013CD29 /* VehiclesScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesScreenViewController.swift; sourceTree = "<group>"; };
-		FC842E182E1604E40013CD29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC842E192E1604E40013CD29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FC842E1B2E1604E40013CD29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FC842E1D2E1604E40013CD29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC842E202E1604E40013CD29 /* Zeros_Cantina.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zeros_Cantina.xcdatamodel; sourceTree = "<group>"; };
-		FC842E712E1604EE0013CD29 /* Zeros_CantinaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zeros_CantinaTests.swift; sourceTree = "<group>"; };
-		FC842E742E1604F10013CD29 /* Zeros_CantinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zeros_CantinaUITests.swift; sourceTree = "<group>"; };
-		FC842E752E1604F10013CD29 /* Zeros_CantinaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zeros_CantinaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,12 +226,549 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC029B7D2E16127C0051663F /* App Helping Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B7B2E16127C0051663F /* CardType.swift */,
+				FC029B7C2E16127C0051663F /* NotificationsConstants.swift */,
+			);
+			path = "App Helping Constants";
+			sourceTree = "<group>";
+		};
+		FC029B822E16127C0051663F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B7E2E16127C0051663F /* DIContainerProtocol.swift */,
+				FC029B7F2E16127C0051663F /* MainRouterProtocol.swift */,
+				FC029B802E16127C0051663F /* ModulesFactoryProtocol.swift */,
+				FC029B812E16127C0051663F /* RouterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FC029B842E16127C0051663F /* ModulesFactoryImpl */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B832E16127C0051663F /* ModulesFactoryImpl.swift */,
+			);
+			path = ModulesFactoryImpl;
+			sourceTree = "<group>";
+		};
+		FC029B852E16127C0051663F /* Protocols Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B842E16127C0051663F /* ModulesFactoryImpl */,
+			);
+			path = "Protocols Implementations";
+			sourceTree = "<group>";
+		};
+		FC029B872E16127C0051663F /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B822E16127C0051663F /* Protocols */,
+				FC029B852E16127C0051663F /* Protocols Implementations */,
+				FC029B862E16127C0051663F /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		FC029B892E16127C0051663F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B882E16127C0051663F /* UIApplication + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FC029B8B2E16127C0051663F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B8A2E16127C0051663F /* Array.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FC029B8D2E16127C0051663F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B8C2E16127C0051663F /* Faking.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FC029B8F2E16127C0051663F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B8E2E16127C0051663F /* AlertBuilder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FC029B902E16127C0051663F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B8B2E16127C0051663F /* Extensions */,
+				FC029B8D2E16127C0051663F /* Protocols */,
+				FC029B8F2E16127C0051663F /* Services */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FC029B922E16127C0051663F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B912E16127C0051663F /* MenuItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC029B942E16127C0051663F /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B932E16127C0051663F /* AppMenuAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		FC029B992E16127C0051663F /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B952E16127C0051663F /* AppReducer.swift */,
+				FC029B962E16127C0051663F /* CommonReducer.swift */,
+				FC029B972E16127C0051663F /* ItemsReducer.swift */,
+				FC029B982E16127C0051663F /* Reducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		FC029B9C2E16127C0051663F /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B942E16127C0051663F /* Actions */,
+				FC029B992E16127C0051663F /* Reducer */,
+				FC029B9A2E16127C0051663F /* State.swift */,
+				FC029B9B2E16127C0051663F /* MenuScreenStore.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		FC029B9D2E16127C0051663F /* Domain Layer */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B922E16127C0051663F /* Models */,
+				FC029B9C2E16127C0051663F /* Redux */,
+			);
+			path = "Domain Layer";
+			sourceTree = "<group>";
+		};
+		FC029BA02E16127C0051663F /* ItemsList */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B9E2E16127C0051663F /* HomeView.swift */,
+				FC029B9F2E16127C0051663F /* MenuItemsListView.swift */,
+			);
+			path = ItemsList;
+			sourceTree = "<group>";
+		};
+		FC029BA12E16127C0051663F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BA02E16127C0051663F /* ItemsList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FC029BA22E16127C0051663F /* Main Menu Module */ = {
+			isa = PBXGroup;
+			children = (
+				FC029C5E2E1632910051663F /* Presentation Layer */,
+				FC029C5D2E1632820051663F /* Navigation */,
+				FC029B902E16127C0051663F /* Utils */,
+				FC029B9D2E16127C0051663F /* Domain Layer */,
+			);
+			path = "Main Menu Module";
+			sourceTree = "<group>";
+		};
+		FC029BA52E16127C0051663F /* JSONS */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BA32E16127C0051663F /* characters.json */,
+				FC029BA42E16127C0051663F /* planets.json */,
+			);
+			path = JSONS;
+			sourceTree = "<group>";
+		};
+		FC029BA82E16127C0051663F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BA52E16127C0051663F /* JSONS */,
+				FC029BA62E16127C0051663F /* Assets.xcassets */,
+				FC029BA72E16127C0051663F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC029BAA2E16127C0051663F /* CardItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BA92E16127C0051663F /* CardItemCollectionViewCell.swift */,
+			);
+			path = CardItemCell;
+			sourceTree = "<group>";
+		};
+		FC029BAD2E16127C0051663F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BAB2E16127C0051663F /* CustomTabBarButtonModel.swift */,
+				FC029BAC2E16127C0051663F /* CustomTabBarConfiguration.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC029BB02E16127C0051663F /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BAD2E16127C0051663F /* Models */,
+				FC029BAE2E16127C0051663F /* CustomTabBar.swift */,
+				FC029BAF2E16127C0051663F /* CustomTabBarButton.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		FC029BB22E16127C0051663F /* VCWithCustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BB12E16127C0051663F /* VCWithCustomTabBar.swift */,
+			);
+			path = VCWithCustomTabBar;
+			sourceTree = "<group>";
+		};
+		FC029BB32E16127C0051663F /* Reusable UI Library */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BAA2E16127C0051663F /* CardItemCell */,
+				FC029BB02E16127C0051663F /* CustomTabBar */,
+				FC029BB22E16127C0051663F /* VCWithCustomTabBar */,
+			);
+			path = "Reusable UI Library";
+			sourceTree = "<group>";
+		};
+		FC029BB52E16127C0051663F /* Core Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BB42E16127C0051663F /* CoreDataManager.swift */,
+			);
+			path = "Core Data Manager";
+			sourceTree = "<group>";
+		};
+		FC029BB92E16127C0051663F /* Local JSON Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BB62E16127C0051663F /* LocalJSONCharactersFetcher.swift */,
+				FC029BB72E16127C0051663F /* LocalJSONDataManager.swift */,
+				FC029BB82E16127C0051663F /* LocalJSONPlanetsFetcher.swift */,
+			);
+			path = "Local JSON Data Manager";
+			sourceTree = "<group>";
+		};
+		FC029BBD2E16127C0051663F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BBA2E16127C0051663F /* SWAPICharactersContainerModel.swift */,
+				FC029BBB2E16127C0051663F /* SWAPIPlanetsContainerModel.swift */,
+				FC029BBC2E16127C0051663F /* SWAPIVehiclesContainerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC029BC22E16127C0051663F /* Network SWAPI Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BBD2E16127C0051663F /* Models */,
+				FC029BBE2E16127C0051663F /* NetworkSWAPIDataManager.swift */,
+				FC029BBF2E16127C0051663F /* SWAPICharactersFetcher.swift */,
+				FC029BC02E16127C0051663F /* SWAPIPlanetsFetcher.swift */,
+				FC029BC12E16127C0051663F /* SWAPIVehiclesFetcher.swift */,
+			);
+			path = "Network SWAPI Data Manager";
+			sourceTree = "<group>";
+		};
+		FC029BC32E16127C0051663F /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BB52E16127C0051663F /* Core Data Manager */,
+				FC029BB92E16127C0051663F /* Local JSON Data Manager */,
+				FC029BC22E16127C0051663F /* Network SWAPI Data Manager */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		FC029BC42E16127C0051663F /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BC32E16127C0051663F /* Workers */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		FC029BC52E16127C0051663F /* Frameworks and Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BC42E16127C0051663F /* Data Layer */,
+			);
+			path = "Frameworks and Drivers";
+			sourceTree = "<group>";
+		};
+		FC029BC82E16127C0051663F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BC62E16127C0051663F /* DataRepositoryWorkerProtocol.swift */,
+				FC029BC72E16127C0051663F /* MainDataRepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FC029BCA2E16127C0051663F /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BC82E16127C0051663F /* Protocols */,
+				FC029BC92E16127C0051663F /* MainDataRepositoryImpl.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		FC029BCC2E16127C0051663F /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BCB2E16127C0051663F /* MainModuleProxyImpl.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		FC029BCD2E16127C0051663F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		FC029BCE2E16127C0051663F /* MainModuleProxy */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BCC2E16127C0051663F /* Implementation */,
+				FC029BCD2E16127C0051663F /* Protocol */,
+			);
+			path = MainModuleProxy;
+			sourceTree = "<group>";
+		};
+		FC029BD02E16127C0051663F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BCF2E16127C0051663F /* CardItemProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FC029BD42E16127C0051663F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BD02E16127C0051663F /* Protocols */,
+				FC029BD12E16127C0051663F /* CharacterCardModel.swift */,
+				FC029BD22E16127C0051663F /* PlanetCardModel.swift */,
+				FC029BD32E16127C0051663F /* VehiclesCardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC029BD62E16127C0051663F /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BD52E16127C0051663F /* MainModuleDataOutputProtocol.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		FC029BDC2E16127C0051663F /* Wiki Main Module */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BCA2E16127C0051663F /* DataLayer */,
+				FC029BCE2E16127C0051663F /* MainModuleProxy */,
+				FC029BD42E16127C0051663F /* Models */,
+				FC029BD62E16127C0051663F /* Output */,
+				FC029BD72E16127C0051663F /* MainContract.swift */,
+				FC029BD82E16127C0051663F /* MainEntity.swift */,
+				FC029BD92E16127C0051663F /* MainInteractor.swift */,
+				FC029BDA2E16127C0051663F /* MainPresenter.swift */,
+				FC029BDB2E16127C0051663F /* MainRouter.swift */,
+			);
+			path = "Wiki Main Module";
+			sourceTree = "<group>";
+		};
+		FC029BDE2E16127C0051663F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BDD2E16127C0051663F /* CharactersModuleDataInputProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FC029BDF2E16127C0051663F /* CharactersUIModuleAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BDE2E16127C0051663F /* Protocols */,
+			);
+			path = CharactersUIModuleAdapter;
+			sourceTree = "<group>";
+		};
+		FC029BE52E16127C0051663F /* CharactersModule */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BDF2E16127C0051663F /* CharactersUIModuleAdapter */,
+				FC029BE02E16127C0051663F /* CharactersScreenContract.swift */,
+				FC029BE12E16127C0051663F /* CharactersScreenInteractor.swift */,
+				FC029BE22E16127C0051663F /* CharactersScreenPresenter.swift */,
+				FC029BE32E16127C0051663F /* CharactersScreenRouter.swift */,
+				FC029BE42E16127C0051663F /* CharactersScreenViewController.swift */,
+			);
+			path = CharactersModule;
+			sourceTree = "<group>";
+		};
+		FC029BE72E16127C0051663F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BE62E16127C0051663F /* PlanetsModuleDataInputProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FC029BE82E16127C0051663F /* PlanetsUIModuleAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BE72E16127C0051663F /* Protocols */,
+			);
+			path = PlanetsUIModuleAdapter;
+			sourceTree = "<group>";
+		};
+		FC029BEE2E16127C0051663F /* PlanetsModule */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BE82E16127C0051663F /* PlanetsUIModuleAdapter */,
+				FC029BE92E16127C0051663F /* PlanetsScreenContract.swift */,
+				FC029BEA2E16127C0051663F /* PlanetsScreenInteractor.swift */,
+				FC029BEB2E16127C0051663F /* PlanetsScreenPresenter.swift */,
+				FC029BEC2E16127C0051663F /* PlanetsScreenRouter.swift */,
+				FC029BED2E16127C0051663F /* PlanetsScreenViewController.swift */,
+			);
+			path = PlanetsModule;
+			sourceTree = "<group>";
+		};
+		FC029BF02E16127C0051663F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BEF2E16127C0051663F /* VehiclesModuleDataInputProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FC029BF12E16127C0051663F /* VehiclesUIModuleAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BF02E16127C0051663F /* Protocols */,
+			);
+			path = VehiclesUIModuleAdapter;
+			sourceTree = "<group>";
+		};
+		FC029BF72E16127C0051663F /* VehiclesModule */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BF12E16127C0051663F /* VehiclesUIModuleAdapter */,
+				FC029BF22E16127C0051663F /* VehiclesScreenContract.swift */,
+				FC029BF32E16127C0051663F /* VehiclesScreenInteractor.swift */,
+				FC029BF42E16127C0051663F /* VehiclesScreenPresenter.swift */,
+				FC029BF52E16127C0051663F /* VehiclesScreenRouter.swift */,
+				FC029BF62E16127C0051663F /* VehiclesScreenViewController.swift */,
+			);
+			path = VehiclesModule;
+			sourceTree = "<group>";
+		};
+		FC029BF82E16127C0051663F /* Wiki Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BE52E16127C0051663F /* CharactersModule */,
+				FC029BEE2E16127C0051663F /* PlanetsModule */,
+				FC029BF72E16127C0051663F /* VehiclesModule */,
+			);
+			path = "Wiki Modules";
+			sourceTree = "<group>";
+		};
+		FC029BF92E16127C0051663F /* Wiki Module */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BC52E16127C0051663F /* Frameworks and Drivers */,
+				FC029BDC2E16127C0051663F /* Wiki Main Module */,
+				FC029BF82E16127C0051663F /* Wiki Modules */,
+			);
+			path = "Wiki Module";
+			sourceTree = "<group>";
+		};
+		FC029C012E16127C0051663F /* Zeros Cantina */ = {
+			isa = PBXGroup;
+			children = (
+				FC029B7D2E16127C0051663F /* App Helping Constants */,
+				FC029B872E16127C0051663F /* DI */,
+				FC029B892E16127C0051663F /* Extensions */,
+				FC029BA22E16127C0051663F /* Main Menu Module */,
+				FC029BA82E16127C0051663F /* Resources */,
+				FC029BB32E16127C0051663F /* Reusable UI Library */,
+				FC029BF92E16127C0051663F /* Wiki Module */,
+				FC029BFA2E16127C0051663F /* AppDelegate.swift */,
+				FC029BFC2E16127C0051663F /* LaunchScreen.storyboard */,
+				FC029BFE2E16127C0051663F /* Main.storyboard */,
+				FC029BFF2E16127C0051663F /* SceneDelegate.swift */,
+				FC029C002E16127C0051663F /* Zeros_Cantina.xcdatamodeld */,
+			);
+			path = "Zeros Cantina";
+			sourceTree = "<group>";
+		};
+		FC029C542E16127E0051663F /* Zeros CantinaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC029C532E16127E0051663F /* Zeros_CantinaTests.swift */,
+			);
+			path = "Zeros CantinaTests";
+			sourceTree = "<group>";
+		};
+		FC029C582E1612810051663F /* Zeros CantinaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC029C562E1612810051663F /* Zeros_CantinaUITests.swift */,
+				FC029C572E1612810051663F /* Zeros_CantinaUITestsLaunchTests.swift */,
+			);
+			path = "Zeros CantinaUITests";
+			sourceTree = "<group>";
+		};
+		FC029C5D2E1632820051663F /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FC029C5B2E1631660051663F /* MenuScreenRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FC029C5E2E1632910051663F /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				FC029BA12E16127C0051663F /* Screens */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
 		FC2134642DFCE8ED000B71D6 = {
 			isa = PBXGroup;
 			children = (
-				FC842E1F2E1604E40013CD29 /* Zeros Cantina */,
-				FC842E722E1604EE0013CD29 /* Zeros CantinaTests */,
-				FC842E762E1604F10013CD29 /* Zeros CantinaUITests */,
+				FC029C012E16127C0051663F /* Zeros Cantina */,
+				FC029C542E16127E0051663F /* Zeros CantinaTests */,
+				FC029C582E1612810051663F /* Zeros CantinaUITests */,
 				FC7A74D62DFD075B000F07D3 /* Frameworks */,
 				FC21346E2DFCE8ED000B71D6 /* Products */,
 			);
@@ -250,526 +789,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FC842D9B2E1604E40013CD29 /* App Helping Constants */ = {
-			isa = PBXGroup;
-			children = (
-				FC842D992E1604E40013CD29 /* CardType.swift */,
-				FC842D9A2E1604E40013CD29 /* NotificationsConstants.swift */,
-			);
-			path = "App Helping Constants";
-			sourceTree = "<group>";
-		};
-		FC842DA02E1604E40013CD29 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				FC842D9C2E1604E40013CD29 /* DIContainerProtocol.swift */,
-				FC842D9D2E1604E40013CD29 /* MainRouterProtocol.swift */,
-				FC842D9E2E1604E40013CD29 /* ModulesFactoryProtocol.swift */,
-				FC842D9F2E1604E40013CD29 /* RouterProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		FC842DA22E1604E40013CD29 /* ModulesFactoryImpl */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DA12E1604E40013CD29 /* ModulesFactoryImpl.swift */,
-			);
-			path = ModulesFactoryImpl;
-			sourceTree = "<group>";
-		};
-		FC842DA32E1604E40013CD29 /* Protocols Implementations */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DA22E1604E40013CD29 /* ModulesFactoryImpl */,
-			);
-			path = "Protocols Implementations";
-			sourceTree = "<group>";
-		};
-		FC842DA52E1604E40013CD29 /* DI */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DA02E1604E40013CD29 /* Protocols */,
-				FC842DA32E1604E40013CD29 /* Protocols Implementations */,
-				FC842DA42E1604E40013CD29 /* DIContainer.swift */,
-			);
-			path = DI;
-			sourceTree = "<group>";
-		};
-		FC842DA72E1604E40013CD29 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DA62E1604E40013CD29 /* UIApplication + Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		FC842DA92E1604E40013CD29 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DA82E1604E40013CD29 /* Array.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		FC842DAB2E1604E40013CD29 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DAA2E1604E40013CD29 /* Faking.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		FC842DAD2E1604E40013CD29 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DAC2E1604E40013CD29 /* AlertBuilder.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		FC842DAE2E1604E40013CD29 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DA92E1604E40013CD29 /* Extensions */,
-				FC842DAB2E1604E40013CD29 /* Protocols */,
-				FC842DAD2E1604E40013CD29 /* Services */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		FC842DB02E1604E40013CD29 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DAF2E1604E40013CD29 /* Item.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		FC842DB22E1604E40013CD29 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DB12E1604E40013CD29 /* AppMenuAction.swift */,
-			);
-			path = Actions;
-			sourceTree = "<group>";
-		};
-		FC842DB72E1604E40013CD29 /* Reducer */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DB32E1604E40013CD29 /* AppReducer.swift */,
-				FC842DB42E1604E40013CD29 /* CommonReducer.swift */,
-				FC842DB52E1604E40013CD29 /* ItemsReducer.swift */,
-				FC842DB62E1604E40013CD29 /* Reducer.swift */,
-			);
-			path = Reducer;
-			sourceTree = "<group>";
-		};
-		FC842DBA2E1604E40013CD29 /* Redux */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DB22E1604E40013CD29 /* Actions */,
-				FC842DB72E1604E40013CD29 /* Reducer */,
-				FC842DB82E1604E40013CD29 /* State.swift */,
-				FC842DB92E1604E40013CD29 /* Store.swift */,
-			);
-			path = Redux;
-			sourceTree = "<group>";
-		};
-		FC842DBB2E1604E40013CD29 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DB02E1604E40013CD29 /* Models */,
-				FC842DBA2E1604E40013CD29 /* Redux */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		FC842DBE2E1604E40013CD29 /* ItemsList */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DBC2E1604E40013CD29 /* HomeView.swift */,
-				FC842DBD2E1604E40013CD29 /* MenuItemsListView.swift */,
-			);
-			path = ItemsList;
-			sourceTree = "<group>";
-		};
-		FC842DBF2E1604E40013CD29 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DBE2E1604E40013CD29 /* ItemsList */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		FC842DC02E1604E40013CD29 /* Home Module */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DAE2E1604E40013CD29 /* Common */,
-				FC842DBB2E1604E40013CD29 /* Domain */,
-				FC842DBF2E1604E40013CD29 /* Screens */,
-			);
-			path = "Home Module";
-			sourceTree = "<group>";
-		};
-		FC842DC32E1604E40013CD29 /* JSONS */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DC12E1604E40013CD29 /* characters.json */,
-				FC842DC22E1604E40013CD29 /* planets.json */,
-			);
-			path = JSONS;
-			sourceTree = "<group>";
-		};
-		FC842DC62E1604E40013CD29 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DC32E1604E40013CD29 /* JSONS */,
-				FC842DC42E1604E40013CD29 /* Assets.xcassets */,
-				FC842DC52E1604E40013CD29 /* Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		FC842DC82E1604E40013CD29 /* CardItemCell */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DC72E1604E40013CD29 /* CardItemCollectionViewCell.swift */,
-			);
-			path = CardItemCell;
-			sourceTree = "<group>";
-		};
-		FC842DCB2E1604E40013CD29 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DC92E1604E40013CD29 /* CustomTabBarButtonModel.swift */,
-				FC842DCA2E1604E40013CD29 /* CustomTabBarConfiguration.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		FC842DCE2E1604E40013CD29 /* CustomTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DCB2E1604E40013CD29 /* Models */,
-				FC842DCC2E1604E40013CD29 /* CustomTabBar.swift */,
-				FC842DCD2E1604E40013CD29 /* CustomTabBarButton.swift */,
-			);
-			path = CustomTabBar;
-			sourceTree = "<group>";
-		};
-		FC842DD02E1604E40013CD29 /* VCWithCustomTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DCF2E1604E40013CD29 /* VCWithCustomTabBar.swift */,
-			);
-			path = VCWithCustomTabBar;
-			sourceTree = "<group>";
-		};
-		FC842DD12E1604E40013CD29 /* Reusable UI Library */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DC82E1604E40013CD29 /* CardItemCell */,
-				FC842DCE2E1604E40013CD29 /* CustomTabBar */,
-				FC842DD02E1604E40013CD29 /* VCWithCustomTabBar */,
-			);
-			path = "Reusable UI Library";
-			sourceTree = "<group>";
-		};
-		FC842DD32E1604E40013CD29 /* Core Data Manager */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DD22E1604E40013CD29 /* CoreDataManager.swift */,
-			);
-			path = "Core Data Manager";
-			sourceTree = "<group>";
-		};
-		FC842DD72E1604E40013CD29 /* Local JSON Data Manager */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DD42E1604E40013CD29 /* LocalJSONCharactersFetcher.swift */,
-				FC842DD52E1604E40013CD29 /* LocalJSONDataManager.swift */,
-				FC842DD62E1604E40013CD29 /* LocalJSONPlanetsFetcher.swift */,
-			);
-			path = "Local JSON Data Manager";
-			sourceTree = "<group>";
-		};
-		FC842DDB2E1604E40013CD29 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DD82E1604E40013CD29 /* SWAPICharactersContainerModel.swift */,
-				FC842DD92E1604E40013CD29 /* SWAPIPlanetsContainerModel.swift */,
-				FC842DDA2E1604E40013CD29 /* SWAPIVehiclesContainerModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		FC842DE02E1604E40013CD29 /* Network SWAPI Data Manager */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DDB2E1604E40013CD29 /* Models */,
-				FC842DDC2E1604E40013CD29 /* NetworkSWAPIDataManager.swift */,
-				FC842DDD2E1604E40013CD29 /* SWAPICharactersFetcher.swift */,
-				FC842DDE2E1604E40013CD29 /* SWAPIPlanetsFetcher.swift */,
-				FC842DDF2E1604E40013CD29 /* SWAPIVehiclesFetcher.swift */,
-			);
-			path = "Network SWAPI Data Manager";
-			sourceTree = "<group>";
-		};
-		FC842DE12E1604E40013CD29 /* Workers */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DD32E1604E40013CD29 /* Core Data Manager */,
-				FC842DD72E1604E40013CD29 /* Local JSON Data Manager */,
-				FC842DE02E1604E40013CD29 /* Network SWAPI Data Manager */,
-			);
-			path = Workers;
-			sourceTree = "<group>";
-		};
-		FC842DE22E1604E40013CD29 /* Data Layer */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DE12E1604E40013CD29 /* Workers */,
-			);
-			path = "Data Layer";
-			sourceTree = "<group>";
-		};
-		FC842DE32E1604E40013CD29 /* Frameworks and Drivers */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DE22E1604E40013CD29 /* Data Layer */,
-			);
-			path = "Frameworks and Drivers";
-			sourceTree = "<group>";
-		};
-		FC842DE62E1604E40013CD29 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DE42E1604E40013CD29 /* DataRepositoryWorkerProtocol.swift */,
-				FC842DE52E1604E40013CD29 /* MainDataRepositoryProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		FC842DE82E1604E40013CD29 /* DataLayer */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DE62E1604E40013CD29 /* Protocols */,
-				FC842DE72E1604E40013CD29 /* MainDataRepositoryImpl.swift */,
-			);
-			path = DataLayer;
-			sourceTree = "<group>";
-		};
-		FC842DEA2E1604E40013CD29 /* Implementation */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DE92E1604E40013CD29 /* MainModuleProxyImpl.swift */,
-			);
-			path = Implementation;
-			sourceTree = "<group>";
-		};
-		FC842DEB2E1604E40013CD29 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		FC842DEC2E1604E40013CD29 /* MainModuleProxy */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DEA2E1604E40013CD29 /* Implementation */,
-				FC842DEB2E1604E40013CD29 /* Protocol */,
-			);
-			path = MainModuleProxy;
-			sourceTree = "<group>";
-		};
-		FC842DEE2E1604E40013CD29 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DED2E1604E40013CD29 /* CardItemProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		FC842DF22E1604E40013CD29 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DEE2E1604E40013CD29 /* Protocols */,
-				FC842DEF2E1604E40013CD29 /* CharacterCardModel.swift */,
-				FC842DF02E1604E40013CD29 /* PlanetCardModel.swift */,
-				FC842DF12E1604E40013CD29 /* VehiclesCardModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		FC842DF42E1604E40013CD29 /* Output */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DF32E1604E40013CD29 /* MainModuleDataOutputProtocol.swift */,
-			);
-			path = Output;
-			sourceTree = "<group>";
-		};
-		FC842DFA2E1604E40013CD29 /* Wiki Main Module */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DE82E1604E40013CD29 /* DataLayer */,
-				FC842DEC2E1604E40013CD29 /* MainModuleProxy */,
-				FC842DF22E1604E40013CD29 /* Models */,
-				FC842DF42E1604E40013CD29 /* Output */,
-				FC842DF52E1604E40013CD29 /* MainContract.swift */,
-				FC842DF62E1604E40013CD29 /* MainEntity.swift */,
-				FC842DF72E1604E40013CD29 /* MainInteractor.swift */,
-				FC842DF82E1604E40013CD29 /* MainPresenter.swift */,
-				FC842DF92E1604E40013CD29 /* MainRouter.swift */,
-			);
-			path = "Wiki Main Module";
-			sourceTree = "<group>";
-		};
-		FC842DFC2E1604E40013CD29 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DFB2E1604E40013CD29 /* CharactersModuleDataInputProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		FC842DFD2E1604E40013CD29 /* CharactersUIModuleAdapter */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DFC2E1604E40013CD29 /* Protocols */,
-			);
-			path = CharactersUIModuleAdapter;
-			sourceTree = "<group>";
-		};
-		FC842E032E1604E40013CD29 /* CharactersModule */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DFD2E1604E40013CD29 /* CharactersUIModuleAdapter */,
-				FC842DFE2E1604E40013CD29 /* CharactersScreenContract.swift */,
-				FC842DFF2E1604E40013CD29 /* CharactersScreenInteractor.swift */,
-				FC842E002E1604E40013CD29 /* CharactersScreenPresenter.swift */,
-				FC842E012E1604E40013CD29 /* CharactersScreenRouter.swift */,
-				FC842E022E1604E40013CD29 /* CharactersScreenViewController.swift */,
-			);
-			path = CharactersModule;
-			sourceTree = "<group>";
-		};
-		FC842E052E1604E40013CD29 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				FC842E042E1604E40013CD29 /* PlanetsModuleDataInputProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		FC842E062E1604E40013CD29 /* PlanetsUIModuleAdapter */ = {
-			isa = PBXGroup;
-			children = (
-				FC842E052E1604E40013CD29 /* Protocols */,
-			);
-			path = PlanetsUIModuleAdapter;
-			sourceTree = "<group>";
-		};
-		FC842E0C2E1604E40013CD29 /* PlanetsModule */ = {
-			isa = PBXGroup;
-			children = (
-				FC842E062E1604E40013CD29 /* PlanetsUIModuleAdapter */,
-				FC842E072E1604E40013CD29 /* PlanetsScreenContract.swift */,
-				FC842E082E1604E40013CD29 /* PlanetsScreenInteractor.swift */,
-				FC842E092E1604E40013CD29 /* PlanetsScreenPresenter.swift */,
-				FC842E0A2E1604E40013CD29 /* PlanetsScreenRouter.swift */,
-				FC842E0B2E1604E40013CD29 /* PlanetsScreenViewController.swift */,
-			);
-			path = PlanetsModule;
-			sourceTree = "<group>";
-		};
-		FC842E0E2E1604E40013CD29 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				FC842E0D2E1604E40013CD29 /* VehiclesModuleDataInputProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		FC842E0F2E1604E40013CD29 /* VehiclesUIModuleAdapter */ = {
-			isa = PBXGroup;
-			children = (
-				FC842E0E2E1604E40013CD29 /* Protocols */,
-			);
-			path = VehiclesUIModuleAdapter;
-			sourceTree = "<group>";
-		};
-		FC842E152E1604E40013CD29 /* VehiclesModule */ = {
-			isa = PBXGroup;
-			children = (
-				FC842E0F2E1604E40013CD29 /* VehiclesUIModuleAdapter */,
-				FC842E102E1604E40013CD29 /* VehiclesScreenContract.swift */,
-				FC842E112E1604E40013CD29 /* VehiclesScreenInteractor.swift */,
-				FC842E122E1604E40013CD29 /* VehiclesScreenPresenter.swift */,
-				FC842E132E1604E40013CD29 /* VehiclesScreenRouter.swift */,
-				FC842E142E1604E40013CD29 /* VehiclesScreenViewController.swift */,
-			);
-			path = VehiclesModule;
-			sourceTree = "<group>";
-		};
-		FC842E162E1604E40013CD29 /* Wiki Modules */ = {
-			isa = PBXGroup;
-			children = (
-				FC842E032E1604E40013CD29 /* CharactersModule */,
-				FC842E0C2E1604E40013CD29 /* PlanetsModule */,
-				FC842E152E1604E40013CD29 /* VehiclesModule */,
-			);
-			path = "Wiki Modules";
-			sourceTree = "<group>";
-		};
-		FC842E172E1604E40013CD29 /* Wiki Module */ = {
-			isa = PBXGroup;
-			children = (
-				FC842DE32E1604E40013CD29 /* Frameworks and Drivers */,
-				FC842DFA2E1604E40013CD29 /* Wiki Main Module */,
-				FC842E162E1604E40013CD29 /* Wiki Modules */,
-			);
-			path = "Wiki Module";
-			sourceTree = "<group>";
-		};
-		FC842E1F2E1604E40013CD29 /* Zeros Cantina */ = {
-			isa = PBXGroup;
-			children = (
-				FC842D9B2E1604E40013CD29 /* App Helping Constants */,
-				FC842DA52E1604E40013CD29 /* DI */,
-				FC842DA72E1604E40013CD29 /* Extensions */,
-				FC842DC02E1604E40013CD29 /* Home Module */,
-				FC842DC62E1604E40013CD29 /* Resources */,
-				FC842DD12E1604E40013CD29 /* Reusable UI Library */,
-				FC842E172E1604E40013CD29 /* Wiki Module */,
-				FC842E182E1604E40013CD29 /* AppDelegate.swift */,
-				FC842E1A2E1604E40013CD29 /* LaunchScreen.storyboard */,
-				FC842E1C2E1604E40013CD29 /* Main.storyboard */,
-				FC842E1D2E1604E40013CD29 /* SceneDelegate.swift */,
-				FC842E1E2E1604E40013CD29 /* Zeros_Cantina.xcdatamodeld */,
-			);
-			path = "Zeros Cantina";
-			sourceTree = "<group>";
-		};
-		FC842E722E1604EE0013CD29 /* Zeros CantinaTests */ = {
-			isa = PBXGroup;
-			children = (
-				FC842E712E1604EE0013CD29 /* Zeros_CantinaTests.swift */,
-			);
-			path = "Zeros CantinaTests";
-			sourceTree = "<group>";
-		};
-		FC842E762E1604F10013CD29 /* Zeros CantinaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FC842E742E1604F10013CD29 /* Zeros_CantinaUITests.swift */,
-				FC842E752E1604F10013CD29 /* Zeros_CantinaUITestsLaunchTests.swift */,
-			);
-			path = "Zeros CantinaUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -888,11 +907,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC842E212E1604E40013CD29 /* characters.json in Resources */,
-				FC842E222E1604E40013CD29 /* planets.json in Resources */,
-				FC842E232E1604E40013CD29 /* Assets.xcassets in Resources */,
-				FC842E252E1604E40013CD29 /* LaunchScreen.storyboard in Resources */,
-				FC842E262E1604E40013CD29 /* Main.storyboard in Resources */,
+				FC029C4D2E16127C0051663F /* characters.json in Resources */,
+				FC029C4E2E16127C0051663F /* planets.json in Resources */,
+				FC029C4F2E16127C0051663F /* Assets.xcassets in Resources */,
+				FC029C512E16127C0051663F /* LaunchScreen.storyboard in Resources */,
+				FC029C522E16127C0051663F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -940,80 +959,81 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC842E272E1604E40013CD29 /* CardType.swift in Sources */,
-				FC842E282E1604E40013CD29 /* NotificationsConstants.swift in Sources */,
-				FC842E292E1604E40013CD29 /* DIContainerProtocol.swift in Sources */,
-				FC842E2A2E1604E40013CD29 /* MainRouterProtocol.swift in Sources */,
-				FC842E2B2E1604E40013CD29 /* ModulesFactoryProtocol.swift in Sources */,
-				FC842E2C2E1604E40013CD29 /* RouterProtocol.swift in Sources */,
-				FC842E2D2E1604E40013CD29 /* ModulesFactoryImpl.swift in Sources */,
-				FC842E2E2E1604E40013CD29 /* DIContainer.swift in Sources */,
-				FC842E2F2E1604E40013CD29 /* UIApplication + Extensions.swift in Sources */,
-				FC842E302E1604E40013CD29 /* Array.swift in Sources */,
-				FC842E312E1604E40013CD29 /* Faking.swift in Sources */,
-				FC842E322E1604E40013CD29 /* AlertBuilder.swift in Sources */,
-				FC842E332E1604E40013CD29 /* Item.swift in Sources */,
-				FC842E342E1604E40013CD29 /* AppMenuAction.swift in Sources */,
-				FC842E352E1604E40013CD29 /* AppReducer.swift in Sources */,
-				FC842E362E1604E40013CD29 /* CommonReducer.swift in Sources */,
-				FC842E372E1604E40013CD29 /* ItemsReducer.swift in Sources */,
-				FC842E382E1604E40013CD29 /* Reducer.swift in Sources */,
-				FC842E392E1604E40013CD29 /* State.swift in Sources */,
-				FC842E3A2E1604E40013CD29 /* Store.swift in Sources */,
-				FC842E3B2E1604E40013CD29 /* HomeView.swift in Sources */,
-				FC842E3C2E1604E40013CD29 /* MenuItemsListView.swift in Sources */,
-				FC842E3D2E1604E40013CD29 /* CardItemCollectionViewCell.swift in Sources */,
-				FC842E3E2E1604E40013CD29 /* CustomTabBarButtonModel.swift in Sources */,
-				FC842E3F2E1604E40013CD29 /* CustomTabBarConfiguration.swift in Sources */,
-				FC842E402E1604E40013CD29 /* CustomTabBar.swift in Sources */,
-				FC842E412E1604E40013CD29 /* CustomTabBarButton.swift in Sources */,
-				FC842E422E1604E40013CD29 /* VCWithCustomTabBar.swift in Sources */,
-				FC842E432E1604E40013CD29 /* CoreDataManager.swift in Sources */,
-				FC842E442E1604E40013CD29 /* LocalJSONCharactersFetcher.swift in Sources */,
-				FC842E452E1604E40013CD29 /* LocalJSONDataManager.swift in Sources */,
-				FC842E462E1604E40013CD29 /* LocalJSONPlanetsFetcher.swift in Sources */,
-				FC842E472E1604E40013CD29 /* SWAPICharactersContainerModel.swift in Sources */,
-				FC842E482E1604E40013CD29 /* SWAPIPlanetsContainerModel.swift in Sources */,
-				FC842E492E1604E40013CD29 /* SWAPIVehiclesContainerModel.swift in Sources */,
-				FC842E4A2E1604E40013CD29 /* NetworkSWAPIDataManager.swift in Sources */,
-				FC842E4B2E1604E40013CD29 /* SWAPICharactersFetcher.swift in Sources */,
-				FC842E4C2E1604E40013CD29 /* SWAPIPlanetsFetcher.swift in Sources */,
-				FC842E4D2E1604E40013CD29 /* SWAPIVehiclesFetcher.swift in Sources */,
-				FC842E4E2E1604E40013CD29 /* DataRepositoryWorkerProtocol.swift in Sources */,
-				FC842E4F2E1604E40013CD29 /* MainDataRepositoryProtocol.swift in Sources */,
-				FC842E502E1604E40013CD29 /* MainDataRepositoryImpl.swift in Sources */,
-				FC842E512E1604E40013CD29 /* MainModuleProxyImpl.swift in Sources */,
-				FC842E522E1604E40013CD29 /* CardItemProtocol.swift in Sources */,
-				FC842E532E1604E40013CD29 /* CharacterCardModel.swift in Sources */,
-				FC842E542E1604E40013CD29 /* PlanetCardModel.swift in Sources */,
-				FC842E552E1604E40013CD29 /* VehiclesCardModel.swift in Sources */,
-				FC842E562E1604E40013CD29 /* MainModuleDataOutputProtocol.swift in Sources */,
-				FC842E572E1604E40013CD29 /* MainContract.swift in Sources */,
-				FC842E582E1604E40013CD29 /* MainEntity.swift in Sources */,
-				FC842E592E1604E40013CD29 /* MainInteractor.swift in Sources */,
-				FC842E5A2E1604E40013CD29 /* MainPresenter.swift in Sources */,
-				FC842E5B2E1604E40013CD29 /* MainRouter.swift in Sources */,
-				FC842E5C2E1604E40013CD29 /* CharactersModuleDataInputProtocol.swift in Sources */,
-				FC842E5D2E1604E40013CD29 /* CharactersScreenContract.swift in Sources */,
-				FC842E5E2E1604E40013CD29 /* CharactersScreenInteractor.swift in Sources */,
-				FC842E5F2E1604E40013CD29 /* CharactersScreenPresenter.swift in Sources */,
-				FC842E602E1604E40013CD29 /* CharactersScreenRouter.swift in Sources */,
-				FC842E612E1604E40013CD29 /* CharactersScreenViewController.swift in Sources */,
-				FC842E622E1604E40013CD29 /* PlanetsModuleDataInputProtocol.swift in Sources */,
-				FC842E632E1604E40013CD29 /* PlanetsScreenContract.swift in Sources */,
-				FC842E642E1604E40013CD29 /* PlanetsScreenInteractor.swift in Sources */,
-				FC842E652E1604E40013CD29 /* PlanetsScreenPresenter.swift in Sources */,
-				FC842E662E1604E40013CD29 /* PlanetsScreenRouter.swift in Sources */,
-				FC842E672E1604E40013CD29 /* PlanetsScreenViewController.swift in Sources */,
-				FC842E682E1604E40013CD29 /* VehiclesModuleDataInputProtocol.swift in Sources */,
-				FC842E692E1604E40013CD29 /* VehiclesScreenContract.swift in Sources */,
-				FC842E6A2E1604E40013CD29 /* VehiclesScreenInteractor.swift in Sources */,
-				FC842E6B2E1604E40013CD29 /* VehiclesScreenPresenter.swift in Sources */,
-				FC842E6C2E1604E40013CD29 /* VehiclesScreenRouter.swift in Sources */,
-				FC842E6D2E1604E40013CD29 /* VehiclesScreenViewController.swift in Sources */,
-				FC842E6E2E1604E40013CD29 /* AppDelegate.swift in Sources */,
-				FC842E6F2E1604E40013CD29 /* SceneDelegate.swift in Sources */,
-				FC842E702E1604E40013CD29 /* Zeros_Cantina.xcdatamodeld in Sources */,
+				FC029C032E16127C0051663F /* CardType.swift in Sources */,
+				FC029C042E16127C0051663F /* NotificationsConstants.swift in Sources */,
+				FC029C052E16127C0051663F /* DIContainerProtocol.swift in Sources */,
+				FC029C062E16127C0051663F /* MainRouterProtocol.swift in Sources */,
+				FC029C072E16127C0051663F /* ModulesFactoryProtocol.swift in Sources */,
+				FC029C082E16127C0051663F /* RouterProtocol.swift in Sources */,
+				FC029C092E16127C0051663F /* ModulesFactoryImpl.swift in Sources */,
+				FC029C0A2E16127C0051663F /* DIContainer.swift in Sources */,
+				FC029C0B2E16127C0051663F /* UIApplication + Extensions.swift in Sources */,
+				FC029C0C2E16127C0051663F /* Array.swift in Sources */,
+				FC029C0D2E16127C0051663F /* Faking.swift in Sources */,
+				FC029C0E2E16127C0051663F /* AlertBuilder.swift in Sources */,
+				FC029C0F2E16127C0051663F /* MenuItem.swift in Sources */,
+				FC029C102E16127C0051663F /* AppMenuAction.swift in Sources */,
+				FC029C112E16127C0051663F /* AppReducer.swift in Sources */,
+				FC029C122E16127C0051663F /* CommonReducer.swift in Sources */,
+				FC029C132E16127C0051663F /* ItemsReducer.swift in Sources */,
+				FC029C142E16127C0051663F /* Reducer.swift in Sources */,
+				FC029C152E16127C0051663F /* State.swift in Sources */,
+				FC029C162E16127C0051663F /* MenuScreenStore.swift in Sources */,
+				FC029C172E16127C0051663F /* HomeView.swift in Sources */,
+				FC029C182E16127C0051663F /* MenuItemsListView.swift in Sources */,
+				FC029C192E16127C0051663F /* CardItemCollectionViewCell.swift in Sources */,
+				FC029C1A2E16127C0051663F /* CustomTabBarButtonModel.swift in Sources */,
+				FC029C1B2E16127C0051663F /* CustomTabBarConfiguration.swift in Sources */,
+				FC029C1C2E16127C0051663F /* CustomTabBar.swift in Sources */,
+				FC029C1D2E16127C0051663F /* CustomTabBarButton.swift in Sources */,
+				FC029C1E2E16127C0051663F /* VCWithCustomTabBar.swift in Sources */,
+				FC029C1F2E16127C0051663F /* CoreDataManager.swift in Sources */,
+				FC029C202E16127C0051663F /* LocalJSONCharactersFetcher.swift in Sources */,
+				FC029C212E16127C0051663F /* LocalJSONDataManager.swift in Sources */,
+				FC029C222E16127C0051663F /* LocalJSONPlanetsFetcher.swift in Sources */,
+				FC029C232E16127C0051663F /* SWAPICharactersContainerModel.swift in Sources */,
+				FC029C242E16127C0051663F /* SWAPIPlanetsContainerModel.swift in Sources */,
+				FC029C252E16127C0051663F /* SWAPIVehiclesContainerModel.swift in Sources */,
+				FC029C262E16127C0051663F /* NetworkSWAPIDataManager.swift in Sources */,
+				FC029C272E16127C0051663F /* SWAPICharactersFetcher.swift in Sources */,
+				FC029C282E16127C0051663F /* SWAPIPlanetsFetcher.swift in Sources */,
+				FC029C292E16127C0051663F /* SWAPIVehiclesFetcher.swift in Sources */,
+				FC029C2A2E16127C0051663F /* DataRepositoryWorkerProtocol.swift in Sources */,
+				FC029C2B2E16127C0051663F /* MainDataRepositoryProtocol.swift in Sources */,
+				FC029C2C2E16127C0051663F /* MainDataRepositoryImpl.swift in Sources */,
+				FC029C2D2E16127C0051663F /* MainModuleProxyImpl.swift in Sources */,
+				FC029C2E2E16127C0051663F /* CardItemProtocol.swift in Sources */,
+				FC029C2F2E16127C0051663F /* CharacterCardModel.swift in Sources */,
+				FC029C302E16127C0051663F /* PlanetCardModel.swift in Sources */,
+				FC029C312E16127C0051663F /* VehiclesCardModel.swift in Sources */,
+				FC029C322E16127C0051663F /* MainModuleDataOutputProtocol.swift in Sources */,
+				FC029C5C2E1631660051663F /* MenuScreenRouter.swift in Sources */,
+				FC029C332E16127C0051663F /* MainContract.swift in Sources */,
+				FC029C342E16127C0051663F /* MainEntity.swift in Sources */,
+				FC029C352E16127C0051663F /* MainInteractor.swift in Sources */,
+				FC029C362E16127C0051663F /* MainPresenter.swift in Sources */,
+				FC029C372E16127C0051663F /* MainRouter.swift in Sources */,
+				FC029C382E16127C0051663F /* CharactersModuleDataInputProtocol.swift in Sources */,
+				FC029C392E16127C0051663F /* CharactersScreenContract.swift in Sources */,
+				FC029C3A2E16127C0051663F /* CharactersScreenInteractor.swift in Sources */,
+				FC029C3B2E16127C0051663F /* CharactersScreenPresenter.swift in Sources */,
+				FC029C3C2E16127C0051663F /* CharactersScreenRouter.swift in Sources */,
+				FC029C3D2E16127C0051663F /* CharactersScreenViewController.swift in Sources */,
+				FC029C3E2E16127C0051663F /* PlanetsModuleDataInputProtocol.swift in Sources */,
+				FC029C3F2E16127C0051663F /* PlanetsScreenContract.swift in Sources */,
+				FC029C402E16127C0051663F /* PlanetsScreenInteractor.swift in Sources */,
+				FC029C412E16127C0051663F /* PlanetsScreenPresenter.swift in Sources */,
+				FC029C422E16127C0051663F /* PlanetsScreenRouter.swift in Sources */,
+				FC029C432E16127C0051663F /* PlanetsScreenViewController.swift in Sources */,
+				FC029C442E16127C0051663F /* VehiclesModuleDataInputProtocol.swift in Sources */,
+				FC029C452E16127C0051663F /* VehiclesScreenContract.swift in Sources */,
+				FC029C462E16127C0051663F /* VehiclesScreenInteractor.swift in Sources */,
+				FC029C472E16127C0051663F /* VehiclesScreenPresenter.swift in Sources */,
+				FC029C482E16127C0051663F /* VehiclesScreenRouter.swift in Sources */,
+				FC029C492E16127C0051663F /* VehiclesScreenViewController.swift in Sources */,
+				FC029C4A2E16127C0051663F /* AppDelegate.swift in Sources */,
+				FC029C4B2E16127C0051663F /* SceneDelegate.swift in Sources */,
+				FC029C4C2E16127C0051663F /* Zeros_Cantina.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1021,7 +1041,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC842E732E1604EE0013CD29 /* Zeros_CantinaTests.swift in Sources */,
+				FC029C552E16127E0051663F /* Zeros_CantinaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1029,8 +1049,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC842E772E1604F10013CD29 /* Zeros_CantinaUITests.swift in Sources */,
-				FC842E782E1604F10013CD29 /* Zeros_CantinaUITestsLaunchTests.swift in Sources */,
+				FC029C592E1612810051663F /* Zeros_CantinaUITests.swift in Sources */,
+				FC029C5A2E1612810051663F /* Zeros_CantinaUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1050,18 +1070,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FC842E1A2E1604E40013CD29 /* LaunchScreen.storyboard */ = {
+		FC029BFC2E16127C0051663F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FC842E192E1604E40013CD29 /* Base */,
+				FC029BFB2E16127C0051663F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		FC842E1C2E1604E40013CD29 /* Main.storyboard */ = {
+		FC029BFE2E16127C0051663F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FC842E1B2E1604E40013CD29 /* Base */,
+				FC029BFD2E16127C0051663F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1385,12 +1405,12 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		FC842E1E2E1604E40013CD29 /* Zeros_Cantina.xcdatamodeld */ = {
+		FC029C002E16127C0051663F /* Zeros_Cantina.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FC842E202E1604E40013CD29 /* Zeros_Cantina.xcdatamodel */,
+				FC029C022E16127C0051663F /* Zeros_Cantina.xcdatamodel */,
 			);
-			currentVersion = FC842E202E1604E40013CD29 /* Zeros_Cantina.xcdatamodel */;
+			currentVersion = FC029C022E16127C0051663F /* Zeros_Cantina.xcdatamodel */;
 			path = Zeros_Cantina.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

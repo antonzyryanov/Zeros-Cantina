@@ -31,12 +31,16 @@ class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProto
     
     func show(screen: String) {
         switch screen {
+            case "Wiki":
+                showCharactersScreen()
             case "Characters":
                 showCharactersScreen()
             case "Vehicles":
                 showVehiclesScreen()
             case "Planets":
                 showPlanetsScreen()
+            case "Menu":
+                showMenuScreen()
             default:
                 _ = "default"
         }
@@ -44,7 +48,7 @@ class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProto
     
     func showCharactersScreen() {
         guard
-        let charactersScreenVCRouter = childRouters[0] as? CharactersScreenRouter,
+        let charactersScreenVCRouter = childRouters[1] as? CharactersScreenRouter,
         let charactersScreenVC = charactersScreenVCRouter.presenter.view as? CharactersScreenViewController,
         let currentWindow = UIApplication.shared.currentWindow
         else {
@@ -56,7 +60,7 @@ class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProto
     
     func showVehiclesScreen() {
         guard
-        let vehiclesScreenVCRouter = childRouters[1] as? VehiclesScreenRouter,
+        let vehiclesScreenVCRouter = childRouters[2] as? VehiclesScreenRouter,
         let vehiclesScreenVC = vehiclesScreenVCRouter.presenter.view as? VehiclesScreenViewController,
         let currentWindow = UIApplication.shared.currentWindow
         else {
@@ -68,7 +72,7 @@ class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProto
     
     func showPlanetsScreen() {
         guard
-        let planetsScreenVCRouter = childRouters[2] as? PlanetsScreenRouter,
+        let planetsScreenVCRouter = childRouters[3] as? PlanetsScreenRouter,
         let planetsScreenVC = planetsScreenVCRouter.presenter.view as? PlanetsScreenViewController,
         let currentWindow = UIApplication.shared.currentWindow
         else {
@@ -76,6 +80,18 @@ class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProto
             return
         }
         currentWindow.rootViewController = planetsScreenVC
+    }
+    
+    func showMenuScreen() {
+        guard
+        let menuRouter = childRouters[0] as? MenuScreenRouter,
+        let menuRouterVC = menuRouter.viewController,
+        let currentWindow = UIApplication.shared.currentWindow
+        else {
+            print("[MainRouter] failed to show Menu screen")
+            return
+        }
+        currentWindow.rootViewController = menuRouterVC
     }
     
     func createModule(dataRepository: MainDataRepositoryProtocol)  {

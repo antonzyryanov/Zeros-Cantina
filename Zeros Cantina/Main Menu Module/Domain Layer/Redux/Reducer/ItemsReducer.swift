@@ -11,15 +11,19 @@ let itemsReducer: Reducer<AppState, AppMenuAction.ItemsAction> = Reducer { state
         state.isLoaderPresented = false
         state.items = items
         
-    case .loadItems:
-        return Just(Item.fakeItems())
-            .delay(for: 4, scheduler: DispatchQueue.main)
+    case .setupItems:
+        return Just([MenuItem(title: "Wiki"),
+                     MenuItem(title: "Quotes"),
+                     MenuItem(title: "Settings")
+                    ])
+            .delay(for: 0.1, scheduler: DispatchQueue.main)
             .map { .setItems($0) }
             .eraseToAnyPublisher()
         
-    case .updateItem(let item):
-        state.items = state.items.arrayByUpdatingItem(item)
-        
+    case .openItem(let item):
+        state.chosenItem = item.title
+    case .itemWasOpened:
+        state.chosenItem = nil
     default:
         break
     }

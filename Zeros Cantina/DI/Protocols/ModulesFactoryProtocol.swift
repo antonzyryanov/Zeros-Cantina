@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ModulesFactoryProtocol {
-    func createMainModule(dataRepository: MainDataRepositoryProtocol) -> RouterProtocol
+    func createMainWikiModule(dataRepository: MainDataRepositoryProtocol) -> RouterProtocol
 }
