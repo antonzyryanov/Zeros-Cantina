@@ -25,10 +25,10 @@ final class Zeros_CantinaTests: XCTestCase {
     
     func test_WhenTabBarButtonTapped_ThenItChangesColor() {
         let tabBar = CustomTabBar()
-        let tabBarCustomConfiguration = CustomTabBarConfiguration(backgroundColor: .white, borderColor: .red, buttonsColor: .red, borderWidth: 2, cornerRadius: 16, buttonsCornerRadius: 12, buttons: [CustomTabBarButtonModel(title: "Foo", image: UIImage(systemName: "settings")!, action: {
+        let tabBarCustomConfiguration = CustomTabBarConfiguration(backgroundColor: .white, borderColor: .red, buttonsColor: .red, borderWidth: 2, cornerRadius: 16, buttonsCornerRadius: 12, buttons: [CustomTabBarButtonModel(title: "Foo", image: UIImage(named: "settings_icon")!, action: {
             
         }),
-                                                                                                                                                                                                       CustomTabBarButtonModel(title: "Bar", image: UIImage(systemName: "settings")!, action: {
+                                                                                                                                                                                                       CustomTabBarButtonModel(title: "Bar", image: UIImage(named: "settings_icon")!, action: {
                                                                                                                                                                                                        })
                                                                                                                                                                                                       ])
         tabBar.customizeWith(configuration: tabBarCustomConfiguration)
