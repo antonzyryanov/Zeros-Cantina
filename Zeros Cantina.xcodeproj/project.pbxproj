@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -860,6 +860,7 @@
 				};
 			};
 			buildConfigurationList = FC2134682DFCE8ED000B71D6 /* Build configuration list for PBXProject "Zeros Cantina" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -871,7 +872,6 @@
 			packageReferences = (
 				FC5C48B92DFCFF2600AAC4F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
-			preferredProjectObjectVersion = 77;
 			productRefGroup = FC21346E2DFCE8ED000B71D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
