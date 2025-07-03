@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,7 +34,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FC2134982DFCE8EF000B71D6 /* Exceptions for "Zeros Cantina" folder in "Zeros Cantina" target */ = {
+		FC2134982DFCE8EF000B71D6 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/Info.plist,
@@ -44,28 +44,9 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FC21346F2DFCE8ED000B71D6 /* Zeros Cantina */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FC2134982DFCE8EF000B71D6 /* Exceptions for "Zeros Cantina" folder in "Zeros Cantina" target */,
-			);
-			explicitFileTypes = {
-				Resources/JSONS/characters.json = text.json;
-				Resources/JSONS/planets.json = text.json;
-			};
-			path = "Zeros Cantina";
-			sourceTree = "<group>";
-		};
-		FC2134892DFCE8EF000B71D6 /* Zeros CantinaTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Zeros CantinaTests";
-			sourceTree = "<group>";
-		};
-		FC2134932DFCE8EF000B71D6 /* Zeros CantinaUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Zeros CantinaUITests";
-			sourceTree = "<group>";
-		};
+		FC21346F2DFCE8ED000B71D6 /* Zeros Cantina */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (FC2134982DFCE8EF000B71D6 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {Resources/JSONS/characters.json = text.json; Resources/JSONS/planets.json = text.json; }; explicitFolders = (); path = "Zeros Cantina"; sourceTree = "<group>"; };
+		FC2134892DFCE8EF000B71D6 /* Zeros CantinaTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Zeros CantinaTests"; sourceTree = "<group>"; };
+		FC2134932DFCE8EF000B71D6 /* Zeros CantinaUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Zeros CantinaUITests"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +200,7 @@
 				};
 			};
 			buildConfigurationList = FC2134682DFCE8ED000B71D6 /* Build configuration list for PBXProject "Zeros Cantina" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -230,7 +212,6 @@
 			packageReferences = (
 				FC5C48B92DFCFF2600AAC4F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
-			preferredProjectObjectVersion = 77;
 			productRefGroup = FC21346E2DFCE8ED000B71D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +325,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +356,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
