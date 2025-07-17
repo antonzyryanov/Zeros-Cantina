@@ -40,4 +40,10 @@ class ModulesFactoryImpl: ModulesFactoryProtocol {
         return planetsRouter
     }
     
+    func createQuotesModule() -> QuotesScreenRouter {
+        let quotesRouter = QuotesScreenRouter()
+        quotesRouter.createModule()
+        return quotesRouter
+    }
+    
 }

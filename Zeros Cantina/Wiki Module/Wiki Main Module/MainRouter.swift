@@ -41,6 +41,8 @@ class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProto
                 showPlanetsScreen()
             case "Menu":
                 showMenuScreen()
+            case "Quotes":
+                showQuotesScreen()
             default:
                 _ = "default"
         }
@@ -80,6 +82,18 @@ class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProto
             return
         }
         currentWindow.rootViewController = planetsScreenVC
+    }
+    
+    func showQuotesScreen() {
+        guard
+        let quotesRouter = childRouters[4] as? QuotesScreenRouter,
+        let quotesRouterVC = quotesRouter.viewController,
+        let currentWindow = UIApplication.shared.currentWindow
+        else {
+            print("[MainRouter] failed to show Menu screen")
+            return
+        }
+        currentWindow.rootViewController = quotesRouterVC
     }
     
     func showMenuScreen() {

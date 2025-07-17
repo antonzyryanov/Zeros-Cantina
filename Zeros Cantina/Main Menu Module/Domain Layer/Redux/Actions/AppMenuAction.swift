@@ -16,6 +16,8 @@ extension AppMenuAction {
         case setIsAlert(presented: Bool)
         case showAlert(style: AlertBuilder.AlertStyle)
         case setIsLoaderPresented(presented: Bool)
+        case set(isMusicOn: Bool)
+        case setInitialActionsDone
     }
 }
 
