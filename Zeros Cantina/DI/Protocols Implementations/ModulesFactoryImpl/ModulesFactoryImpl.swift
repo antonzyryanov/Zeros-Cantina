@@ -46,4 +46,10 @@ class ModulesFactoryImpl: ModulesFactoryProtocol {
         return quotesRouter
     }
     
+    func createHeroesCardsModule() -> HeroesCardsScreenRouter {
+        let heroesCardsRouter = HeroesCardsScreenRouter()
+        heroesCardsRouter.createModule()
+        return heroesCardsRouter
+    }
+    
 }

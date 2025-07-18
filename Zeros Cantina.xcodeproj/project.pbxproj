@@ -91,6 +91,16 @@
 		FC029C5A2E1612810051663F /* Zeros_CantinaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029C572E1612810051663F /* Zeros_CantinaUITestsLaunchTests.swift */; };
 		FC029C5C2E1631660051663F /* MenuScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029C5B2E1631660051663F /* MenuScreenRouter.swift */; };
 		FC7A74D82DFD075B000F07D3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC7A74D72DFD075B000F07D3 /* SnapKit */; };
+		FCCEE4EE2E2A964B00B67C9B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FCCEE4ED2E2A964B00B67C9B /* RxCocoa */; };
+		FCCEE4F02E2A964B00B67C9B /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = FCCEE4EF2E2A964B00B67C9B /* RxRelay */; };
+		FCCEE4F22E2A964B00B67C9B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCCEE4F12E2A964B00B67C9B /* RxSwift */; };
+		FCCEE4FA2E2A985B00B67C9B /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCEE4F42E2A985B00B67C9B /* Hero.swift */; };
+		FCCEE4FB2E2A985B00B67C9B /* HeroCardsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCEE4F52E2A985B00B67C9B /* HeroCardsState.swift */; };
+		FCCEE4FC2E2A985B00B67C9B /* HeroesCardsIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCEE4F62E2A985B00B67C9B /* HeroesCardsIntent.swift */; };
+		FCCEE4FD2E2A985B00B67C9B /* HeroesCardsSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCEE4F72E2A985B00B67C9B /* HeroesCardsSelector.swift */; };
+		FCCEE4FE2E2A985B00B67C9B /* HeroesCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCEE4F82E2A985B00B67C9B /* HeroesCardsViewController.swift */; };
+		FCCEE5042E2A987600B67C9B /* HeroesCardsScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCEE5022E2A987600B67C9B /* HeroesCardsScreenRouter.swift */; };
+		FCCEE5072E2A9B0700B67C9B /* HeroesCardsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCCEE5052E2A9B0700B67C9B /* HeroesCardsViewController.storyboard */; };
 		FCD152892E29768B001E8EF1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD152882E29768B001E8EF1 /* CardView.swift */; };
 		FCD1528C2E2976B7001E8EF1 /* SwipeableCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD1528B2E2976B7001E8EF1 /* SwipeableCardModel.swift */; };
 		FCD1528E2E29770C001E8EF1 /* CardSwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD1528D2E29770C001E8EF1 /* CardSwipeDirection.swift */; };
@@ -207,6 +217,13 @@
 		FC21346D2DFCE8ED000B71D6 /* Zeros Cantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zeros Cantina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2134862DFCE8EF000B71D6 /* Zeros CantinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeros CantinaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2134902DFCE8EF000B71D6 /* Zeros CantinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeros CantinaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCEE4F42E2A985B00B67C9B /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		FCCEE4F52E2A985B00B67C9B /* HeroCardsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCardsState.swift; sourceTree = "<group>"; };
+		FCCEE4F62E2A985B00B67C9B /* HeroesCardsIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCardsIntent.swift; sourceTree = "<group>"; };
+		FCCEE4F72E2A985B00B67C9B /* HeroesCardsSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCardsSelector.swift; sourceTree = "<group>"; };
+		FCCEE4F82E2A985B00B67C9B /* HeroesCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCardsViewController.swift; sourceTree = "<group>"; };
+		FCCEE5022E2A987600B67C9B /* HeroesCardsScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCardsScreenRouter.swift; sourceTree = "<group>"; };
+		FCCEE5062E2A9B0700B67C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HeroesCardsViewController.storyboard; sourceTree = "<group>"; };
 		FCD152882E29768B001E8EF1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FCD1528B2E2976B7001E8EF1 /* SwipeableCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCardModel.swift; sourceTree = "<group>"; };
 		FCD1528D2E29770C001E8EF1 /* CardSwipeDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeDirection.swift; sourceTree = "<group>"; };
@@ -223,6 +240,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCEE4F02E2A964B00B67C9B /* RxRelay in Frameworks */,
+				FCCEE4EE2E2A964B00B67C9B /* RxCocoa in Frameworks */,
+				FCCEE4F22E2A964B00B67C9B /* RxSwift in Frameworks */,
 				FC7A74D82DFD075B000F07D3 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -733,6 +753,7 @@
 		FC029C012E16127C0051663F /* Zeros Cantina */ = {
 			isa = PBXGroup;
 			children = (
+				FCCEE4E12E2A95EE00B67C9B /* Heroes Cards Module */,
 				FCD152862E2973B7001E8EF1 /* QuotesModule */,
 				FC029B7D2E16127C0051663F /* App Helping Constants */,
 				FC029B872E16127C0051663F /* DI */,
@@ -811,6 +832,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FCCEE4E12E2A95EE00B67C9B /* Heroes Cards Module */ = {
+			isa = PBXGroup;
+			children = (
+				FCCEE5032E2A987600B67C9B /* Navigation */,
+				FCCEE4F92E2A985B00B67C9B /* MVI */,
+			);
+			path = "Heroes Cards Module";
+			sourceTree = "<group>";
+		};
+		FCCEE4F92E2A985B00B67C9B /* MVI */ = {
+			isa = PBXGroup;
+			children = (
+				FCCEE5052E2A9B0700B67C9B /* HeroesCardsViewController.storyboard */,
+				FCCEE4F42E2A985B00B67C9B /* Hero.swift */,
+				FCCEE4F52E2A985B00B67C9B /* HeroCardsState.swift */,
+				FCCEE4F62E2A985B00B67C9B /* HeroesCardsIntent.swift */,
+				FCCEE4F72E2A985B00B67C9B /* HeroesCardsSelector.swift */,
+				FCCEE4F82E2A985B00B67C9B /* HeroesCardsViewController.swift */,
+			);
+			path = MVI;
+			sourceTree = "<group>";
+		};
+		FCCEE5032E2A987600B67C9B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FCCEE5022E2A987600B67C9B /* HeroesCardsScreenRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		FCD152862E2973B7001E8EF1 /* QuotesModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -885,6 +936,9 @@
 			name = "Zeros Cantina";
 			packageProductDependencies = (
 				FC7A74D72DFD075B000F07D3 /* SnapKit */,
+				FCCEE4ED2E2A964B00B67C9B /* RxCocoa */,
+				FCCEE4EF2E2A964B00B67C9B /* RxRelay */,
+				FCCEE4F12E2A964B00B67C9B /* RxSwift */,
 			);
 			productName = "Zeros Cantina";
 			productReference = FC21346D2DFCE8ED000B71D6 /* Zeros Cantina.app */;
@@ -965,6 +1019,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				FC5C48B92DFCFF2600AAC4F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				FCCEE4EC2E2A964B00B67C9B /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = FC21346E2DFCE8ED000B71D6 /* Products */;
 			projectDirPath = "";
@@ -982,6 +1037,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCEE5072E2A9B0700B67C9B /* HeroesCardsViewController.storyboard in Resources */,
 				FC029C4D2E16127C0051663F /* characters.json in Resources */,
 				FC029C4E2E16127C0051663F /* planets.json in Resources */,
 				FC029C4F2E16127C0051663F /* Assets.xcassets in Resources */,
@@ -1096,6 +1152,11 @@
 				FC029C372E16127C0051663F /* MainRouter.swift in Sources */,
 				FC029C382E16127C0051663F /* CharactersModuleDataInputProtocol.swift in Sources */,
 				FC029C392E16127C0051663F /* CharactersScreenContract.swift in Sources */,
+				FCCEE4FA2E2A985B00B67C9B /* Hero.swift in Sources */,
+				FCCEE4FB2E2A985B00B67C9B /* HeroCardsState.swift in Sources */,
+				FCCEE4FC2E2A985B00B67C9B /* HeroesCardsIntent.swift in Sources */,
+				FCCEE4FD2E2A985B00B67C9B /* HeroesCardsSelector.swift in Sources */,
+				FCCEE4FE2E2A985B00B67C9B /* HeroesCardsViewController.swift in Sources */,
 				FC029C3A2E16127C0051663F /* CharactersScreenInteractor.swift in Sources */,
 				FC029C3B2E16127C0051663F /* CharactersScreenPresenter.swift in Sources */,
 				FC029C3C2E16127C0051663F /* CharactersScreenRouter.swift in Sources */,
@@ -1106,6 +1167,7 @@
 				FC029C402E16127C0051663F /* PlanetsScreenInteractor.swift in Sources */,
 				FC029C412E16127C0051663F /* PlanetsScreenPresenter.swift in Sources */,
 				FC029C422E16127C0051663F /* PlanetsScreenRouter.swift in Sources */,
+				FCCEE5042E2A987600B67C9B /* HeroesCardsScreenRouter.swift in Sources */,
 				FC029C432E16127C0051663F /* PlanetsScreenViewController.swift in Sources */,
 				FC029C442E16127C0051663F /* VehiclesModuleDataInputProtocol.swift in Sources */,
 				FC029C452E16127C0051663F /* VehiclesScreenContract.swift in Sources */,
@@ -1168,6 +1230,14 @@
 				FC029BFD2E16127C0051663F /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCCEE5052E2A9B0700B67C9B /* HeroesCardsViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCCEE5062E2A9B0700B67C9B /* Base */,
+			);
+			name = HeroesCardsViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1476,6 +1546,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		FCCEE4EC2E2A964B00B67C9B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1483,6 +1561,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FC5C48B92DFCFF2600AAC4F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		FCCEE4ED2E2A964B00B67C9B /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCCEE4EC2E2A964B00B67C9B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FCCEE4EF2E2A964B00B67C9B /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCCEE4EC2E2A964B00B67C9B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		FCCEE4F12E2A964B00B67C9B /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCCEE4EC2E2A964B00B67C9B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 

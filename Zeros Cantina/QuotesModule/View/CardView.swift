@@ -22,7 +22,7 @@ struct CardView: View {
                 Spacer(minLength: 60)
                     VStack {
                         Spacer().frame(height: 32)
-                        Image("yoda").resizable().scaledToFit().frame(height: 200).cornerRadius(16).padding(8)
+                        Image("Yoda").resizable().scaledToFit().frame(height: 200).cornerRadius(16).padding(8)
                         Spacer().frame(height: 32)
                         Text(model.text).multilineTextAlignment(.center)
                         Spacer()
