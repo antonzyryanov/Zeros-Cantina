@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,9 +20,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IvH-yQ-poL">
-                                <rect key="frame" x="79" y="121" width="256" height="200"/>
+                                <rect key="frame" x="16" y="121" width="382" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="256" id="HyH-Ip-prF"/>
                                     <constraint firstAttribute="height" constant="200" id="zwI-qf-Kg8"/>
                                 </constraints>
                             </imageView>
@@ -119,6 +119,7 @@
                                 </connections>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="hik-pE-0Ob"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IvH-yQ-poL" firstAttribute="bottom" secondItem="JUH-Y7-kbA" secondAttribute="top" constant="-32" id="1xV-cQ-L6h"/>
@@ -134,12 +135,13 @@
                             <constraint firstAttribute="trailing" secondItem="iOn-Zg-4MJ" secondAttribute="trailing" constant="8" id="Jmn-SY-GqA"/>
                             <constraint firstAttribute="trailing" secondItem="JUH-Y7-kbA" secondAttribute="trailing" constant="16" id="MeM-ux-t4s"/>
                             <constraint firstItem="cis-Z2-uGe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NZz-NS-EDi"/>
+                            <constraint firstItem="IvH-yQ-poL" firstAttribute="leading" secondItem="hik-pE-0Ob" secondAttribute="leading" constant="16" id="NkB-tq-sxG"/>
                             <constraint firstItem="NB0-V9-gKL" firstAttribute="top" secondItem="yQt-pk-dSR" secondAttribute="bottom" constant="16" id="Odu-8a-jAJ"/>
                             <constraint firstItem="yQt-pk-dSR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="16" id="R3L-F6-mdM"/>
                             <constraint firstAttribute="trailing" secondItem="Lb0-TO-bAZ" secondAttribute="trailing" constant="16" id="SdH-DT-6pT"/>
                             <constraint firstAttribute="trailing" secondItem="V8V-BQ-q5b" secondAttribute="trailing" constant="16" id="U1Y-H6-dVM"/>
+                            <constraint firstItem="hik-pE-0Ob" firstAttribute="trailing" secondItem="IvH-yQ-poL" secondAttribute="trailing" constant="16" id="W1v-4C-Zbr"/>
                             <constraint firstItem="CgQ-so-Nda" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Y3w-9l-3qa"/>
-                            <constraint firstItem="IvH-yQ-poL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b72-gd-noy"/>
                             <constraint firstItem="HFM-cb-lSn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bTi-mS-d8W"/>
                             <constraint firstItem="rrT-EY-Zn1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="ed3-O6-qJe"/>
                             <constraint firstItem="JUH-Y7-kbA" firstAttribute="centerY" secondItem="iOn-Zg-4MJ" secondAttribute="centerY" id="efK-zP-t7u"/>
@@ -187,7 +189,7 @@
         <image name="home_icon" width="512" height="512"/>
         <image name="stars_background" width="640" height="1136"/>
         <systemColor name="systemTealColor">
-            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

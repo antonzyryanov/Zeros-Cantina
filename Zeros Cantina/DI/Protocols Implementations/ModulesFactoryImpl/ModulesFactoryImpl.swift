@@ -58,4 +58,10 @@ class ModulesFactoryImpl: ModulesFactoryProtocol {
         return websocketRouter
     }
     
+    func createStocksModule(dataRepository: StocksDataRepositoryProtocol) -> StocksRouter {
+        let stocksRouter = StocksRouter()
+        stocksRouter.createModule(dataRepository: dataRepository)
+        return stocksRouter
+    }
+    
 }

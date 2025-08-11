@@ -139,10 +139,6 @@ final class WebSocketViewController: UIViewController, WebSocketViewControllerPr
         view.addGestureRecognizer(tapGesture)
     }
     
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
-    
     func showServerResponse(message: String) {
         serverMessagesPresentationModels.append(.init(serverMessage: message))
         DispatchQueue.main.async {

@@ -10,10 +10,9 @@ var player: AVAudioPlayer?
 
 let commonReducer: Reducer<AppState, AppMenuAction.CommonAction> = Reducer { state, action in
     
-    
-    
     func playMusic() {
-        guard let path = Bundle.main.path(forResource: "menu_music", ofType:"mp3") else {
+        let randomNumber = Int.random(in: 1...3)
+        guard let path = Bundle.main.path(forResource: "menu_music_\(randomNumber)", ofType:"mp3") else {
             return }
         let url = URL(fileURLWithPath: path)
 

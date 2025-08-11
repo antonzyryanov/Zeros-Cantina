@@ -19,6 +19,13 @@
 			</dict>
 		</dict>
 	</dict>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Montserrat-Medium.ttf</string>
+        <string>Montserrat-Bold.ttf</string>
+        <string>Montserrat-SemiBold.ttf</string>
+        <string>Montserrat-Light.ttf</string>
+    </array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
