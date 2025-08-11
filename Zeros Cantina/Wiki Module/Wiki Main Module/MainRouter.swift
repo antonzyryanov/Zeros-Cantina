@@ -45,6 +45,8 @@ class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProto
                 showQuotesScreen()
             case "Heroes Cards":
                 showHeroesCardsScreen()
+            case "WebSocket":
+                showWebSocketScreen()
             default:
                 _ = "default"
         }
@@ -108,6 +110,18 @@ class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProto
             return
         }
         currentWindow.rootViewController = heroesCardsVC
+    }
+    
+    func showWebSocketScreen() {
+        guard
+        let webSocketRouter = childRouters[6] as? WebSocketRouter,
+        let currentWindow = UIApplication.shared.currentWindow
+        else {
+            print("[MainRouter] failed to show Menu screen")
+            return
+        }
+        let webSocketVC = webSocketRouter.view
+        currentWindow.rootViewController = webSocketVC
     }
     
     func showMenuScreen() {

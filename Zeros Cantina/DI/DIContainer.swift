@@ -33,6 +33,7 @@ class DIContainer: DIContainerProtocol {
         createPlanetsModule(modulesFactoryImpl, mainModuleProxy, &routers, mainRouter)
         createQuotesModule(modulesFactoryImpl, &routers, mainRouter)
         createHeroesCardsModule(modulesFactoryImpl, &routers, mainRouter)
+        createWebsocketModule(modulesFactoryImpl, &routers, mainRouter)
         return routers
     }
     
@@ -70,6 +71,12 @@ class DIContainer: DIContainerProtocol {
         let heroesCardsScreenRouter = modulesFactoryImpl.createHeroesCardsModule()
         routers.append(heroesCardsScreenRouter)
         heroesCardsScreenRouter.mainRouter = mainRouter
+    }
+    
+    private func createWebsocketModule(_ modulesFactoryImpl: ModulesFactoryImpl,_ routers: inout [any RouterProtocol], _ mainRouter: MainRouter) {
+        let webSocketRouter = modulesFactoryImpl.createWebsocketModule()
+        routers.append(webSocketRouter)
+        webSocketRouter.mainRouter = mainRouter
     }
     
     func setupRouterDependencies(routers: [RouterProtocol]) {
