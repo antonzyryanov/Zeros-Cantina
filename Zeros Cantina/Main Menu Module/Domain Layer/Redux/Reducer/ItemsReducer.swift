@@ -17,6 +17,7 @@ let itemsReducer: Reducer<AppState, AppMenuAction.ItemsAction> = Reducer { state
                      MenuItem(title: "Heroes Cards"),
                      MenuItem(title: "WebSocket"),
                      MenuItem(title: "Stocks"),
+                     MenuItem(title: "Maps"),
                      MenuItem(title: "Settings")
                     ])
             .delay(for: 0.1, scheduler: DispatchQueue.main)

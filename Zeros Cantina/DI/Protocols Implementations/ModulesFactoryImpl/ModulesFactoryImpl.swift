@@ -64,4 +64,10 @@ class ModulesFactoryImpl: ModulesFactoryProtocol {
         return stocksRouter
     }
     
+    func createMapsModule() -> MapsRouter {
+        let mapsRouter = MapsRouter()
+        mapsRouter.createModule()
+        return mapsRouter
+    }
+    
 }

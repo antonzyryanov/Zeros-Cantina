@@ -49,6 +49,8 @@ class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProto
                 showWebSocketScreen()
             case "Stocks":
                 showStocksScreen()
+            case "Maps":
+                showMapsScreen()
             default:
                 _ = "default"
         }
@@ -136,6 +138,18 @@ class MainRouter: PresenterToRouterMainProtocol, MainRouterProtocol, RouterProto
             return
         }
         currentWindow.rootViewController = stocksVC
+    }
+    
+    func showMapsScreen() {
+        guard
+        let mapsScreenRouter = childRouters[8] as? MapsRouter,
+        let mapsVC = mapsScreenRouter.viewController as? MapsViewController,
+        let currentWindow = UIApplication.shared.currentWindow
+        else {
+            print("[MainRouter] failed to show Stoks screen")
+            return
+        }
+        currentWindow.rootViewController = mapsVC
     }
     
     func showMenuScreen() {
